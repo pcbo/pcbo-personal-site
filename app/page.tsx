@@ -50,19 +50,23 @@ export default function Home() {
 
         <p className="text-foreground leading-relaxed mb-6">
           About me: I'm building{" "}
-          <Link
+          <a
             href="https://talent.app"
+            target="_blank"
+            rel="noopener noreferrer"
             className="underline underline-offset-4 hover:text-muted-foreground transition-colors"
           >
             Talent
-          </Link>{" "}
+          </a>{" "}
           where 𝛼 builders get recognized for their contributions. Follow me on{" "}
-          <Link
+          <a
             href="https://x.com/pcbo"
+            target="_blank"
+            rel="noopener noreferrer"
             className="underline underline-offset-4 hover:text-muted-foreground transition-colors"
           >
             X
-          </Link>
+          </a>
           .
         </p>
 
@@ -93,9 +97,14 @@ export default function Home() {
       <footer className="mx-auto max-w-md w-full mt-16 pt-8 border-t border-muted">
         <p className="text-sm text-muted-foreground">
           Vibe coded from Lisbon by{" "}
-          <Link href="https://x.com/pcbo" className="hover:text-foreground transition-colors">
+          <a
+            href="https://x.com/pcbo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors"
+          >
             PCBO
-          </Link>
+          </a>
           .
         </p>
       </footer>
