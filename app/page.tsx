@@ -4,25 +4,21 @@ import Image from "next/image"
 const posts = [
   {
     title: "Shipping in Silence",
-    description: "Catching up after a quiet but productive...",
     date: "May 5, 2025",
     slug: "log17",
   },
   {
     title: "Out of the Black Hole",
-    description: "What happened since last Summer",
     date: "April 10, 2025",
     slug: "log16",
   },
   {
     title: "Soft-working...",
-    description: "Shipping quietly matters too",
     date: "July 29, 2024",
     slug: "log15",
   },
   {
     title: "BUILDathon Report – Day 3",
-    description: "GETFIT is a reality",
     date: "July 1, 2024",
     slug: "log14",
   },
@@ -37,18 +33,28 @@ export default function Home() {
         </div>
 
         <p className="text-foreground leading-relaxed mb-6">
-          Hi, welcome to my micro-blog. I'm building{" "}
+          Hi, welcome to my micro-blog where I share short writings on things I ship and thoughts I have.
+        </p>
+
+        <p className="text-foreground leading-relaxed mb-6">
+          About me: I'm building{" "}
           <Link
             href="https://talent.app"
             className="underline underline-offset-4 hover:text-muted-foreground transition-colors"
           >
             Talent
           </Link>{" "}
-          where 𝛼 builders get recognized for their contributions.
+          where 𝛼 builders get recognized for their contributions. Follow me on{" "}
+          <Link
+            href="https://x.com/pcbo"
+            className="underline underline-offset-4 hover:text-muted-foreground transition-colors"
+          >
+            X
+          </Link>
+          .
         </p>
 
         <section>
-          <p className="text-foreground mb-6">Short writings on things I ship and thoughts I have.</p>
           <ul className="space-y-6">
             {posts.map((post) => (
               <li key={post.slug}>
@@ -57,7 +63,6 @@ export default function Home() {
                   <h3 className="text-foreground font-medium mt-1 group-hover:text-muted-foreground transition-colors">
                     {post.title}
                   </h3>
-                  <p className="text-muted-foreground mt-1">{post.description}</p>
                 </Link>
               </li>
             ))}
