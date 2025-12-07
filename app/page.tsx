@@ -5,10 +5,8 @@ import Link from "next/link"
 import Image from "next/image"
 
 const avatars = [
-  "/avatar.jpg",
   "/avatars/cults.png",
   "/avatars/pug2.png",
-  "/avatars/corp.jpg",
   "/avatars/base-babe.png",
   "/avatars/pug.png",
   "/avatars/alliance.webp",
