@@ -1,8 +1,18 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
+
+const avatars = [
+  "/avatar.jpg",
+  "/avatars/cults.png",
+  "/avatars/pug2.png",
+  "/avatars/corp.jpg",
+  "/avatars/base-babe.png",
+  "/avatars/pug.png",
+  "/avatars/alliance.webp",
+]
 
 const posts = [
   { title: "Shipping in Silence", date: "May 5, 2025", slug: "log17" },
@@ -26,13 +36,20 @@ const posts = [
 
 export default function Home() {
   const [showAll, setShowAll] = useState(false)
+  const [avatar, setAvatar] = useState(avatars[0])
+
+  useEffect(() => {
+    const randomAvatar = avatars[Math.floor(Math.random() * avatars.length)]
+    setAvatar(randomAvatar)
+  }, [])
+
   const visiblePosts = showAll ? posts : posts.slice(0, 4)
 
   return (
     <main className="min-h-screen bg-background px-6 py-16 md:py-24 flex flex-col">
       <div className="mx-auto max-w-md flex-1">
         <div className="relative w-12 h-12 rounded-full overflow-hidden mb-6">
-          <Image src="/avatar.jpg" alt="PCBO" fill className="object-cover object-top blur-[1px]" />
+          <Image src={avatar || "/placeholder.svg"} alt="PCBO" fill className="object-cover object-center blur-[1px]" />
         </div>
 
         <p className="text-foreground leading-relaxed mb-6">
