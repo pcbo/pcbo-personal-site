@@ -4,13 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 
-const avatars = [
-  "/avatars/cults.png",
-  "/avatars/pug2.png",
-  "/avatars/base-babe.png",
-  "/avatars/pug.png",
-  "/avatars/alliance.webp",
-]
+const avatars = ["/avatars/cults.png", "/avatars/pug2.png", "/avatars/base-babe.png", "/avatars/pug.png"]
 
 const posts = [
   { title: "Shipping in Silence", date: "May 5, 2025", slug: "log17" },
@@ -47,7 +41,7 @@ export default function Home() {
     <main className="min-h-screen bg-background px-6 py-16 md:py-24 flex flex-col">
       <div className="mx-auto max-w-md flex-1">
         <div className="relative w-12 h-12 rounded-full overflow-hidden mb-6">
-          <Image src={avatar || "/placeholder.svg"} alt="PCBO" fill className="object-cover object-center blur-[1px]" />
+          <Image src={avatar || "/placeholder.svg"} alt="PCBO" fill className="object-cover object-center" />
         </div>
 
         <p className="text-foreground leading-relaxed mb-6">
