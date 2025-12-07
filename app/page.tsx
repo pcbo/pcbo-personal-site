@@ -1,30 +1,33 @@
+"use client"
+
+import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 
 const posts = [
-  {
-    title: "Shipping in Silence",
-    date: "May 5, 2025",
-    slug: "log17",
-  },
-  {
-    title: "Out of the Black Hole",
-    date: "April 10, 2025",
-    slug: "log16",
-  },
-  {
-    title: "Soft-working...",
-    date: "July 29, 2024",
-    slug: "log15",
-  },
-  {
-    title: "BUILDathon Report – Day 3",
-    date: "July 1, 2024",
-    slug: "log14",
-  },
+  { title: "Shipping in Silence", date: "May 5, 2025", slug: "log17" },
+  { title: "Out of the Black Hole", date: "April 10, 2025", slug: "log16" },
+  { title: "Soft-working...", date: "July 29, 2024", slug: "log15" },
+  { title: "BUILDathon Report – Day 3", date: "July 1, 2024", slug: "log14" },
+  { title: "BUILDathon Report – Day 2", date: "June 29, 2024", slug: "log13" },
+  { title: "BUILDathon Report – Day 1", date: "June 28, 2024", slug: "log12" },
+  { title: "Planning BUILDathon", date: "June 26, 2024", slug: "log11" },
+  { title: "Providing Feedback to Fellow Builders", date: "June 21, 2024", slug: "log10" },
+  { title: "Git Branches and PR Workflow", date: "June 19, 2024", slug: "log9" },
+  { title: "Summer Builders NFT Collection: Post-Mortem", date: "June 8, 2024", slug: "log8" },
+  { title: "CSS Cache Busting and Git Renaming Issue", date: "June 5, 2024", slug: "log7" },
+  { title: "Summer Builders NFT Collection", date: "June 4, 2024", slug: "log6" },
+  { title: "VSCode and Buildathon Prep", date: "June 3, 2024", slug: "log5" },
+  { title: "Adding Image Assets", date: "May 30, 2024", slug: "log4" },
+  { title: "First Commit to Talent Protocol Org", date: "May 29, 2024", slug: "log3" },
+  { title: "Working with an AI Coding Assistant", date: "May 28, 2024", slug: "log2" },
+  { title: "Setting Up Coding Blog on Vercel", date: "May 27, 2024", slug: "log1" },
 ]
 
 export default function Home() {
+  const [showAll, setShowAll] = useState(false)
+  const visiblePosts = showAll ? posts : posts.slice(0, 4)
+
   return (
     <main className="min-h-screen bg-background px-6 py-16 md:py-24 flex flex-col">
       <div className="mx-auto max-w-md flex-1">
@@ -56,7 +59,7 @@ export default function Home() {
 
         <section>
           <ul className="space-y-6">
-            {posts.map((post) => (
+            {visiblePosts.map((post) => (
               <li key={post.slug}>
                 <Link href={`/blog/${post.slug}`} className="block group">
                   <span className="text-sm text-muted-foreground">{post.date}</span>
@@ -67,12 +70,14 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <Link
-            href="/blog"
-            className="inline-block mt-6 text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Show all posts
-          </Link>
+          {!showAll && (
+            <button
+              onClick={() => setShowAll(true)}
+              className="inline-block mt-6 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Show all
+            </button>
+          )}
         </section>
       </div>
 
