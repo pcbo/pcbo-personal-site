@@ -8,9 +8,9 @@ export interface Post {
 
 export const posts: Post[] = [
   {
-    slug: "log18",
-    title: "Vibe coded pcbo.dev and onchainlisbon.com in just a few hours",
-    description: "End of year update on vibe coding",
+    slug: "post18",
+    title: "Vibe coded pcbo.dev and onchainlisbon.com",
+    description: "End of year update on vibe coding projects",
     date: "December 10, 2025",
     content: `I haven't written a lot in my micro-blog, but I'm sharing a new post as we near the end of the year. The main reason why I haven't shared much is that I've been super focused on improving our product, and talking to customers.
 
@@ -18,16 +18,16 @@ Since my last post, which was on the 5th of May, we had zero contracts signed, a
 
 In the meantime, I kept improving my vibe coding skills. In the last two weeks, I vibe coded [Onchain Lisbon](https://onchainlisbon.com) in a couple of hours while attending ETHGlobal Buenos Aires. I also pushed to [talent.app](https://talent.app) a prank for Rudnevsky, which was a fun and easy thing to ship.
 
-Then, I vibe coded my new site, [pcbo.dev](https://pcbo.dev). Basically, I used v0 to copy the existing one (pcbo.xyz) and it took me less than an hour, plus I bought the domain directly on v0. So smooth.
+Then, I vibe coded my new site, [pcbo.dev](https://pcbo.dev). Basically, I used v0 to copy the previous blog content, and it took me less than an hour to ship a new one, plus I bought the domain directly on v0. So smooth.
 
 Anyway, I'm happy with this. Let's keep building 🫡`,
   },
   {
-    slug: "log17",
+    slug: "post17",
     title: "Shipping in Silence",
     description: "Catching up after a quiet but productive...",
     date: "May 5, 2025",
-    content: `### Log Entry 17: April meets Productivity
+    content: `### April meets Productivity
 
 **April 2025 Recap:**
 - Started coding straight from Cursor, productivity bump. Love it.
@@ -46,11 +46,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Complete [Base Learn](https://docs.base.org/learn/welcome).`,
   },
   {
-    slug: "log16",
+    slug: "post16",
     title: "Out of the Black Hole",
     description: "What happened since last Summer",
     date: "April 10, 2025",
-    content: `### Log Entry 16: Disappeared for a While...
+    content: `### Disappeared for a While...
 
 **Post-BUILDathon 2024 Reality:**
 - After the July 2024 entry, we entered TGE prep aka full token launch mode
@@ -67,14 +67,14 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Use this space more consistently to document and stay accountable`,
   },
   {
-    slug: "log15",
+    slug: "post15",
     title: "Soft-working...",
     description: "Shipping quietly matters too",
     date: "July 29, 2024",
-    content: `### Log Entry 15: I've Been Shipping Quietly...
+    content: `### I've Been Shipping Quietly...
 
 **BUILDathon Retro:**
-- Read parts [1](/blog/log12), [2](/blog/log13) and [3](/blog/log14)
+- Read parts [1](/blog/post12), [2](/blog/post13) and [3](/blog/post14)
 - On part 3, I mostly stepped aside and watched as Leal was cruising a working version to submit for BUILDathon, having him teach me each step of the day wouldn't be productive
 - Now, waiting for final results
 
@@ -87,11 +87,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Keep building and shipping`,
   },
   {
-    slug: "log14",
+    slug: "post14",
     title: "BUILDathon Report – Day 3",
     description: "GETFIT is a reality",
     date: "July 1, 2024",
-    content: `### Log Entry 14: BUILDathon Report – Day 3
+    content: `### BUILDathon Report – Day 3
 
 **Report:**
 - Met IRL again at Poolside
@@ -107,11 +107,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Create another log to go deeper into learnings`,
   },
   {
-    slug: "log13",
+    slug: "post13",
     title: "BUILDathon Report – Day 2",
     description: "What a day....",
     date: "June 29, 2024",
-    content: `### Log Entry 13: BUILDathon Report – Day 2
+    content: `### BUILDathon Report – Day 2
 
 **Report:**
 - Met at Lisbon office at [Poolside](https://www.poolside.co/hub) with the Talent Protocol team, and some other cool folks joined
@@ -143,11 +143,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Create future work doc`,
   },
   {
-    slug: "log12",
+    slug: "post12",
     title: "BUILDathon Report – Day 1",
     description: "First day working on GETFIT project",
     date: "June 28, 2024",
-    content: `### Log Entry 12: BUILDathon Report – Day 1
+    content: `### BUILDathon Report – Day 1
 
 **Report:**
 - Simplified user journey
@@ -179,11 +179,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Test everything and deliver on Devfolio`,
   },
   {
-    slug: "log11",
+    slug: "post11",
     title: "Planning BUILDathon",
     description: "Planning project $GETFIT for BUILDathon",
     date: "June 26, 2024",
-    content: `### Log Entry 11: $GETFIT
+    content: `### $GETFIT
 
 **What:**
 - $GETFIT is an incentive token to help people lose weight through onchain accountability
@@ -227,11 +227,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Test everything and deliver on [Devfolio](https://devfolio.co)`,
   },
   {
-    slug: "log10",
+    slug: "post10",
     title: "Providing Feedback to Fellow Builders",
     description: "Gave product feedback to 3 cool projects...",
     date: "June 21, 2024",
-    content: `### Log Entry 10: Supporting Other Builders
+    content: `### Supporting Other Builders
 
 **What:**
 - Provided product feedback to 3 recent projects that I've used.
@@ -253,11 +253,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Shared some feedback so they can improve the product, definitely recommend for someone launching some new and cool on Farcaster.`,
   },
   {
-    slug: "log9",
+    slug: "post9",
     title: "Git Branches and PR Workflow",
     description: "Re-learning Git branch mechanics",
     date: "June 19, 2024",
-    content: `### Log Entry 9: Git Branches and Pull Requests
+    content: `### Git Branches and Pull Requests
 
 **What:**
 1. Installed GitHub Pull Requests extension for VSCode
@@ -268,11 +268,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Continue improving Git skills`,
   },
   {
-    slug: "log8",
+    slug: "post8",
     title: "Summer Builders NFT Collection: Post-Mortem",
     description: "Reflections on launching the Summer...",
     date: "June 8, 2024",
-    content: `### Log Entry 8: Summer Builders NFT Post-Mortem
+    content: `### Summer Builders NFT Post-Mortem
 
 **Distribution Challenges:**
 - Our launch date coincided with peak Onchain Summer activity
@@ -296,11 +296,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Apply these learnings to future projects`,
   },
   {
-    slug: "log7",
+    slug: "post7",
     title: "CSS Cache Busting and Git Renaming Issue",
     description: "Learned about cache busting technique...",
     date: "June 5, 2024",
-    content: `### Log Entry 7: Cloudflare Caching and Git File Rename Issues
+    content: `### Cloudflare Caching and Git File Rename Issues
 
 **Cloudflare Cache Busting:**
 - Cloudflare caches CSS files, causing outdated styles to persist
@@ -323,11 +323,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Git doesn't automatically track renames with casing changes, use consistent casing for file names from the start`,
   },
   {
-    slug: "log6",
+    slug: "post6",
     title: "Summer Builders NFT Collection",
     description: "Collaborated with Simon to launch an NFT...",
     date: "June 4, 2024",
-    content: `### Log Entry 6: Summer Builders NFT Collection on Zora
+    content: `### Summer Builders NFT Collection on Zora
 
 **What:**
 - [Launched an NFT collection on Zora with Simon](https://zora.co/collect/base:0xb0fa7a2ed2e734b986160399ea883004610c9ae6)
@@ -367,11 +367,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Try the Farcaster frame feature on Zora and also creating a Bounty through Bountycaster`,
   },
   {
-    slug: "log5",
+    slug: "post5",
     title: "VSCode and Buildathon Prep",
     description: "Started using VSCode, and started...",
     date: "June 3, 2024",
-    content: `### Log Entry 5: VSCode & Buildathon
+    content: `### VSCode & Buildathon
 
 **Progress Report:**
 - Did my first code change and commit using VSCode + GitHub Desktop
@@ -397,11 +397,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Define next steps for Buildathon project`,
   },
   {
-    slug: "log4",
+    slug: "post4",
     title: "Adding Image Assets",
     description: "Added PFP to personal site and working...",
     date: "May 30, 2024",
-    content: `### Log Entry 4: Adding Image Assets
+    content: `### Adding Image Assets
 
 **What:**
 1. Added profile picture (PFP) image to pcbo.xyz
@@ -418,11 +418,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Create a new structure on pcbo.xyz, for deeper thoughts, side by side with log entries`,
   },
   {
-    slug: "log3",
+    slug: "post3",
     title: "First Commit to Talent Protocol Org",
     description: "Made first commit ever to Talent...",
     date: "May 29, 2024",
-    content: `### Log Entry 3: Contributing to Talent Protocol
+    content: `### Contributing to Talent Protocol
 
 **What:**
 1. CTO Leal added me as contributor to Talent Protocol org
@@ -446,11 +446,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - Add my PFP to pcbo.xyz`,
   },
   {
-    slug: "log2",
+    slug: "post2",
     title: "Working with an AI Coding Assistant",
     description: "Using Claude, an AI assistant, to help...",
     date: "May 28, 2024",
-    content: `### Log Entry 2: Working with Claude
+    content: `### Working with Claude
 
 **What:**
 1. Decided to enlist an AI assistant to help with coding and blogging
@@ -482,11 +482,11 @@ Anyway, I'm happy with this. Let's keep building 🫡`,
 - AI assistants aren't magic, but a powerful tool`,
   },
   {
-    slug: "log1",
+    slug: "post1",
     title: "Setting Up Coding Blog on Vercel",
     description: "Configured Vercel to deploy a...",
     date: "May 27, 2024",
-    content: `### Log Entry 1: Blog Setup with Vercel
+    content: `### Blog Setup with Vercel
 
 **What:**
 1. Signed up for Vercel, connected to GitHub

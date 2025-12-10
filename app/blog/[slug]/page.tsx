@@ -1,99 +1,277 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getPostBySlug, getAllPosts } from "@/lib/posts"
-import type { JSX } from "react"
+import type React from "react"
 
 export async function generateStaticParams() {
   const posts = getAllPosts()
   return posts.map((post) => ({ slug: post.slug }))
 }
 
-export const dynamicParams = true
-
-// Custom markdown parser to fix Next.js compatibility
-function parseMarkdown(content: string): JSX.Element[] {
+function parseMarkdown(content: string) {
   const lines = content.split("\n")
-  const elements: JSX.Element[] = []
-  let key = 0
+  const elements: React.ReactNode[] = []
+  let currentParagraph: string[] = []
+  let currentList: { type: "ul" | "ol"; items: string[] } | null = null
+  let keyCounter = 0
 
-  // Helper to parse inline content (links and bold text)
-  const parseInline = (text: string): (string | JSX.Element)[] => {
-    const result: (string | JSX.Element)[] = []
+  const parseInline = (text: string): React.ReactNode[] => {
+    const parts: React.ReactNode[] = []
     let remaining = text
     let inlineKey = 0
 
     while (remaining.length > 0) {
-      // Check for links [text](url)
-      const linkMatch = remaining.match(/\[([^\]]+)\]$$([^)]+)$$/)
-      if (linkMatch) {
-        const beforeLink = remaining.slice(0, linkMatch.index)
-        if (beforeLink) result.push(beforeLink)
+      // Find the next special marker
+      const backtick = remaining.indexOf("`")
+      const openBracket = remaining.indexOf("[")
+      const tripleAsterisk = remaining.indexOf("***")
+      const doubleAsterisk = remaining.indexOf("**")
+      const singleAsterisk = remaining.indexOf("*")
 
-        result.push(
-          <a
-            key={`link-${inlineKey++}`}
-            href={linkMatch[2]}
-            className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
+      // Find the earliest marker
+      const markers = [
+        { type: "code", pos: backtick },
+        { type: "link", pos: openBracket },
+        { type: "bolditalic", pos: tripleAsterisk },
+        { type: "bold", pos: doubleAsterisk },
+        { type: "italic", pos: singleAsterisk },
+      ].filter((m) => m.pos !== -1)
+
+      if (markers.length === 0) {
+        parts.push(remaining)
+        break
+      }
+
+      // Sort by position, but prioritize longer markers at same position
+      markers.sort((a, b) => {
+        if (a.pos !== b.pos) return a.pos - b.pos
+        // At same position, prioritize triple over double over single asterisk
+        const priority = { bolditalic: 0, bold: 1, italic: 2, code: 3, link: 4 }
+        return priority[a.type as keyof typeof priority] - priority[b.type as keyof typeof priority]
+      })
+
+      const first = markers[0]
+
+      // Handle inline code
+      if (first.type === "code") {
+        const closeBacktick = remaining.indexOf("`", first.pos + 1)
+        if (closeBacktick === -1) {
+          parts.push(remaining)
+          break
+        }
+        if (first.pos > 0) parts.push(remaining.slice(0, first.pos))
+        parts.push(
+          <code
+            key={`code-${inlineKey++}`}
+            className="bg-muted px-1.5 py-0.5 rounded text-sm font-mono text-foreground"
           >
-            {linkMatch[1]}
-          </a>,
+            {remaining.slice(first.pos + 1, closeBacktick)}
+          </code>,
         )
-
-        remaining = remaining.slice(linkMatch.index! + linkMatch[0].length)
+        remaining = remaining.slice(closeBacktick + 1)
         continue
       }
 
-      // Check for bold **text**
-      const boldMatch = remaining.match(/\*\*([^*]+)\*\*/)
-      if (boldMatch) {
-        const beforeBold = remaining.slice(0, boldMatch.index)
-        if (beforeBold) result.push(beforeBold)
-
-        result.push(
-          <strong key={`bold-${inlineKey++}`} className="text-foreground font-medium">
-            {boldMatch[1]}
+      // Handle bold+italic (triple asterisk)
+      if (first.type === "bolditalic") {
+        const closeTriple = remaining.indexOf("***", first.pos + 3)
+        if (closeTriple === -1) {
+          parts.push(remaining)
+          break
+        }
+        if (first.pos > 0) parts.push(remaining.slice(0, first.pos))
+        parts.push(
+          <strong key={`bolditalic-${inlineKey++}`} className="text-foreground font-semibold italic">
+            {remaining.slice(first.pos + 3, closeTriple)}
           </strong>,
         )
-
-        remaining = remaining.slice(boldMatch.index! + boldMatch[0].length)
+        remaining = remaining.slice(closeTriple + 3)
         continue
       }
 
-      // No more special formatting, add remaining text
-      result.push(remaining)
+      // Handle bold
+      if (first.type === "bold") {
+        const closeDouble = remaining.indexOf("**", first.pos + 2)
+        if (closeDouble === -1) {
+          parts.push(remaining)
+          break
+        }
+        if (first.pos > 0) parts.push(remaining.slice(0, first.pos))
+        parts.push(
+          <strong key={`bold-${inlineKey++}`} className="text-foreground font-semibold">
+            {remaining.slice(first.pos + 2, closeDouble)}
+          </strong>,
+        )
+        remaining = remaining.slice(closeDouble + 2)
+        continue
+      }
+
+      // Handle italic (single asterisk, but not part of ** or ***)
+      if (first.type === "italic") {
+        // Skip if this is actually part of ** or ***
+        if (remaining[first.pos + 1] === "*") {
+          parts.push(remaining.slice(0, first.pos + 1))
+          remaining = remaining.slice(first.pos + 1)
+          continue
+        }
+        const closeSingle = remaining.indexOf("*", first.pos + 1)
+        if (closeSingle === -1) {
+          parts.push(remaining)
+          break
+        }
+        if (first.pos > 0) parts.push(remaining.slice(0, first.pos))
+        parts.push(
+          <em key={`italic-${inlineKey++}`} className="text-foreground italic">
+            {remaining.slice(first.pos + 1, closeSingle)}
+          </em>,
+        )
+        remaining = remaining.slice(closeSingle + 1)
+        continue
+      }
+
+      // Handle links
+      if (first.type === "link") {
+        const closeBracket = remaining.indexOf("]", first.pos)
+        if (closeBracket === -1 || remaining[closeBracket + 1] !== "(") {
+          parts.push(remaining.slice(0, first.pos + 1))
+          remaining = remaining.slice(first.pos + 1)
+          continue
+        }
+        const openParen = closeBracket + 1
+        const closeParen = remaining.indexOf(")", openParen)
+        if (closeParen === -1) {
+          parts.push(remaining)
+          break
+        }
+        const linkText = remaining.slice(first.pos + 1, closeBracket)
+        const url = remaining.slice(openParen + 1, closeParen)
+        if (first.pos > 0) parts.push(remaining.slice(0, first.pos))
+
+        const isExternal = url.startsWith("http")
+        if (isExternal) {
+          parts.push(
+            <a
+              key={`link-${inlineKey++}`}
+              href={url}
+              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {linkText}
+            </a>,
+          )
+        } else {
+          parts.push(
+            <Link
+              key={`link-${inlineKey++}`}
+              href={url}
+              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors"
+            >
+              {linkText}
+            </Link>,
+          )
+        }
+        remaining = remaining.slice(closeParen + 1)
+        continue
+      }
+
+      parts.push(remaining)
       break
     }
 
-    return result
+    return parts
   }
 
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i]
-
-    // Headings
-    if (line.startsWith("### ")) {
-      elements.push(
-        <h3 key={key++} className="text-lg font-medium text-foreground mt-6 mb-4">
-          {line.slice(4)}
-        </h3>,
-      )
+  const flushParagraph = () => {
+    if (currentParagraph.length > 0) {
+      const text = currentParagraph.join(" ").trim()
+      if (text) {
+        elements.push(
+          <p key={`p-${keyCounter++}`} className="text-muted-foreground mb-4 leading-relaxed">
+            {parseInline(text)}
+          </p>,
+        )
+      }
+      currentParagraph = []
     }
-    // Empty lines
-    else if (line.trim() === "") {
+  }
+
+  const flushList = () => {
+    if (currentList) {
+      if (currentList.type === "ul") {
+        elements.push(
+          <ul key={`ul-${keyCounter++}`} className="list-disc list-inside text-muted-foreground mb-4 space-y-1">
+            {currentList.items.map((item, i) => (
+              <li key={i}>{parseInline(item)}</li>
+            ))}
+          </ul>,
+        )
+      } else {
+        elements.push(
+          <ol key={`ol-${keyCounter++}`} className="list-decimal list-inside text-muted-foreground mb-4 space-y-1">
+            {currentList.items.map((item, i) => (
+              <li key={i}>{parseInline(item)}</li>
+            ))}
+          </ol>,
+        )
+      }
+      currentList = null
+    }
+  }
+
+  for (const line of lines) {
+    const trimmed = line.trim()
+
+    // Empty line - flush current paragraph
+    if (!trimmed) {
+      flushParagraph()
+      flushList()
       continue
     }
-    // Regular paragraphs (with potential inline formatting)
-    else {
-      const parsed = parseInline(line)
+
+    // Heading
+    if (trimmed.startsWith("### ")) {
+      flushParagraph()
+      flushList()
       elements.push(
-        <p key={key++} className="text-muted-foreground mb-4 leading-relaxed">
-          {parsed}
-        </p>,
+        <h3 key={`h3-${keyCounter++}`} className="text-lg font-medium text-foreground mt-6 mb-4">
+          {trimmed.slice(4)}
+        </h3>,
       )
+      continue
     }
+
+    // Unordered list item
+    if (trimmed.startsWith("- ")) {
+      flushParagraph()
+      if (!currentList || currentList.type !== "ul") {
+        flushList()
+        currentList = { type: "ul", items: [] }
+      }
+      currentList.items.push(trimmed.slice(2))
+      continue
+    }
+
+    // Ordered list item
+    const orderedMatch = trimmed.match(/^(\d+)\.\s+(.*)$/)
+    if (orderedMatch) {
+      flushParagraph()
+      if (!currentList || currentList.type !== "ol") {
+        flushList()
+        currentList = { type: "ol", items: [] }
+      }
+      currentList.items.push(orderedMatch[2])
+      continue
+    }
+
+    // Regular text - add to current paragraph
+    flushList()
+    currentParagraph.push(trimmed)
   }
+
+  // Flush any remaining content
+  flushParagraph()
+  flushList()
 
   return elements
 }
@@ -125,9 +303,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           Vibe coded from Lisbon by{" "}
           <a
             href="https://x.com/pcbo"
-            className="hover:text-foreground transition-colors"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors"
           >
             PCBO
           </a>
