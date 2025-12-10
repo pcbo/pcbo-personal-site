@@ -8,6 +8,8 @@ export async function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }))
 }
 
+export const dynamicParams = true
+
 // Custom markdown parser to fix Next.js compatibility
 function parseMarkdown(content: string): JSX.Element[] {
   const lines = content.split("\n")
@@ -96,8 +98,8 @@ function parseMarkdown(content: string): JSX.Element[] {
   return elements
 }
 
-export default async function PostPage({ params }: { params: { slug: string } }) {
-  const { slug } = params
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
   const post = getPostBySlug(slug)
 
   if (!post) {
