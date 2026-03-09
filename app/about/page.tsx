@@ -74,7 +74,7 @@ export default function AboutPage() {
               </a>
             </li>
             <li>
-              <a href="https://talent.app/profile/pedrocbo" target="_blank" rel="noopener noreferrer"
+              <a href="https://talent.app/pcbo" target="_blank" rel="noopener noreferrer"
                 className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
                 Talent
               </a>
