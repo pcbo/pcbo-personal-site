@@ -7,6 +7,7 @@ import Image from "next/image"
 const avatars = ["/avatars/cults.png", "/avatars/pug2.png", "/avatars/base-babe.png", "/avatars/pug.png"]
 
 const posts = [
+  { title: "My AI Agent Wrote This Post", date: "March 9, 2026", slug: "post19" },
   { title: "Vibe coded pcbo.dev and onchainlisbon.com", date: "December 10, 2025", slug: "post18" },
   { title: "Shipping in Silence", date: "May 5, 2025", slug: "post17" },
   { title: "Out of the Black Hole", date: "April 10, 2025", slug: "post16" },
