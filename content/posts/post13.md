@@ -1,0 +1,37 @@
+---
+title: "BUILDathon Report – Day 2"
+description: "What a day...."
+date: "June 29, 2024"
+slug: "post13"
+---
+
+### BUILDathon Report – Day 2
+
+**Report:**
+- Met at Lisbon office at [Poolside](https://www.poolside.co/hub) with the Talent Protocol team, and some other cool folks joined
+- We were wearing [BUILD](https://build.top) merch, so obvs we had some photos taken
+- Watching Leal code is like watching a magic show. Learned so much... that it's super hard to type down into a single report!
+- Macedo also gave an interesting insight: in a AI-packed future, questions trump answers
+
+**Updated User Journey:**
+1. Leal wakes up and weighs himself on his Withings scale
+2. Leal goes to [oracles.fit](http://oracles.fit) and signs off his results onchain. Leal is already logged in with his wallet and has given read-access permissions to his Withings account
+3. Leal casts into /fitness in order to be eligible for the "Get Fit" round on [rounds.wtf](http://rounds.wtf)
+4. Automatic rewards distribution through Rounds.wtf using BUILD
+
+**Detailed Planning:**
+
+***Saturday Progress:***
+- Create site
+- Connect wallet
+- Connect Withings account
+
+***Sunday Plan:***
+- Fix Withings bugs
+- Create attestation
+- Share on Farcaster [/fitness](https://warpcast.com/~/channel/fitness) channel
+- Create a better logo and cover photo
+- Improve mobile XP
+- Setup rounds.wtf
+- Test everything and submit project on Devfolio
+- Create future work doc

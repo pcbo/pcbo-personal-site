@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { notFound } from "next/navigation"
 import { getPostBySlug, getAllPosts } from "@/lib/posts"
 import type React from "react"
@@ -21,14 +22,12 @@ function parseMarkdown(content: string) {
     let inlineKey = 0
 
     while (remaining.length > 0) {
-      // Find the next special marker
       const backtick = remaining.indexOf("`")
       const openBracket = remaining.indexOf("[")
       const tripleAsterisk = remaining.indexOf("***")
       const doubleAsterisk = remaining.indexOf("**")
       const singleAsterisk = remaining.indexOf("*")
 
-      // Find the earliest marker
       const markers = [
         { type: "code", pos: backtick },
         { type: "link", pos: openBracket },
@@ -42,29 +41,20 @@ function parseMarkdown(content: string) {
         break
       }
 
-      // Sort by position, but prioritize longer markers at same position
       markers.sort((a, b) => {
         if (a.pos !== b.pos) return a.pos - b.pos
-        // At same position, prioritize triple over double over single asterisk
         const priority = { bolditalic: 0, bold: 1, italic: 2, code: 3, link: 4 }
         return priority[a.type as keyof typeof priority] - priority[b.type as keyof typeof priority]
       })
 
       const first = markers[0]
 
-      // Handle inline code
       if (first.type === "code") {
         const closeBacktick = remaining.indexOf("`", first.pos + 1)
-        if (closeBacktick === -1) {
-          parts.push(remaining)
-          break
-        }
+        if (closeBacktick === -1) { parts.push(remaining); break }
         if (first.pos > 0) parts.push(remaining.slice(0, first.pos))
         parts.push(
-          <code
-            key={`code-${inlineKey++}`}
-            className="bg-muted px-1.5 py-0.5 rounded text-sm font-mono text-foreground"
-          >
+          <code key={`code-${inlineKey++}`} className="bg-muted px-1.5 py-0.5 rounded text-sm font-mono text-foreground">
             {remaining.slice(first.pos + 1, closeBacktick)}
           </code>,
         )
@@ -72,13 +62,9 @@ function parseMarkdown(content: string) {
         continue
       }
 
-      // Handle bold+italic (triple asterisk)
       if (first.type === "bolditalic") {
         const closeTriple = remaining.indexOf("***", first.pos + 3)
-        if (closeTriple === -1) {
-          parts.push(remaining)
-          break
-        }
+        if (closeTriple === -1) { parts.push(remaining); break }
         if (first.pos > 0) parts.push(remaining.slice(0, first.pos))
         parts.push(
           <strong key={`bolditalic-${inlineKey++}`} className="text-foreground font-semibold italic">
@@ -89,13 +75,9 @@ function parseMarkdown(content: string) {
         continue
       }
 
-      // Handle bold
       if (first.type === "bold") {
         const closeDouble = remaining.indexOf("**", first.pos + 2)
-        if (closeDouble === -1) {
-          parts.push(remaining)
-          break
-        }
+        if (closeDouble === -1) { parts.push(remaining); break }
         if (first.pos > 0) parts.push(remaining.slice(0, first.pos))
         parts.push(
           <strong key={`bold-${inlineKey++}`} className="text-foreground font-semibold">
@@ -106,19 +88,14 @@ function parseMarkdown(content: string) {
         continue
       }
 
-      // Handle italic (single asterisk, but not part of ** or ***)
       if (first.type === "italic") {
-        // Skip if this is actually part of ** or ***
         if (remaining[first.pos + 1] === "*") {
           parts.push(remaining.slice(0, first.pos + 1))
           remaining = remaining.slice(first.pos + 1)
           continue
         }
         const closeSingle = remaining.indexOf("*", first.pos + 1)
-        if (closeSingle === -1) {
-          parts.push(remaining)
-          break
-        }
+        if (closeSingle === -1) { parts.push(remaining); break }
         if (first.pos > 0) parts.push(remaining.slice(0, first.pos))
         parts.push(
           <em key={`italic-${inlineKey++}`} className="text-foreground italic">
@@ -129,7 +106,6 @@ function parseMarkdown(content: string) {
         continue
       }
 
-      // Handle links
       if (first.type === "link") {
         const closeBracket = remaining.indexOf("]", first.pos)
         if (closeBracket === -1 || remaining[closeBracket + 1] !== "(") {
@@ -139,10 +115,7 @@ function parseMarkdown(content: string) {
         }
         const openParen = closeBracket + 1
         const closeParen = remaining.indexOf(")", openParen)
-        if (closeParen === -1) {
-          parts.push(remaining)
-          break
-        }
+        if (closeParen === -1) { parts.push(remaining); break }
         const linkText = remaining.slice(first.pos + 1, closeBracket)
         const url = remaining.slice(openParen + 1, closeParen)
         if (first.pos > 0) parts.push(remaining.slice(0, first.pos))
@@ -150,23 +123,16 @@ function parseMarkdown(content: string) {
         const isExternal = url.startsWith("http")
         if (isExternal) {
           parts.push(
-            <a
-              key={`link-${inlineKey++}`}
-              href={url}
+            <a key={`link-${inlineKey++}`} href={url}
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+              target="_blank" rel="noopener noreferrer">
               {linkText}
             </a>,
           )
         } else {
           parts.push(
-            <Link
-              key={`link-${inlineKey++}`}
-              href={url}
-              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors"
-            >
+            <Link key={`link-${inlineKey++}`} href={url}
+              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               {linkText}
             </Link>,
           )
@@ -201,17 +167,13 @@ function parseMarkdown(content: string) {
       if (currentList.type === "ul") {
         elements.push(
           <ul key={`ul-${keyCounter++}`} className="list-disc list-inside text-muted-foreground mb-4 space-y-1">
-            {currentList.items.map((item, i) => (
-              <li key={i}>{parseInline(item)}</li>
-            ))}
+            {currentList.items.map((item, i) => (<li key={i}>{parseInline(item)}</li>))}
           </ul>,
         )
       } else {
         elements.push(
           <ol key={`ol-${keyCounter++}`} className="list-decimal list-inside text-muted-foreground mb-4 space-y-1">
-            {currentList.items.map((item, i) => (
-              <li key={i}>{parseInline(item)}</li>
-            ))}
+            {currentList.items.map((item, i) => (<li key={i}>{parseInline(item)}</li>))}
           </ol>,
         )
       }
@@ -222,26 +184,23 @@ function parseMarkdown(content: string) {
   for (const line of lines) {
     const trimmed = line.trim()
 
-    // Empty line - flush current paragraph
     if (!trimmed) {
       flushParagraph()
       flushList()
       continue
     }
 
-    // Heading
     if (trimmed.startsWith("### ")) {
       flushParagraph()
       flushList()
       elements.push(
-        <h3 key={`h3-${keyCounter++}`} className="text-lg font-medium text-foreground mt-6 mb-4">
+        <h3 key={`h3-${keyCounter++}`} className="text-lg font-medium text-foreground mt-8 mb-4">
           {trimmed.slice(4)}
         </h3>,
       )
       continue
     }
 
-    // Unordered list item
     if (trimmed.startsWith("- ")) {
       flushParagraph()
       if (!currentList || currentList.type !== "ul") {
@@ -252,7 +211,6 @@ function parseMarkdown(content: string) {
       continue
     }
 
-    // Ordered list item
     const orderedMatch = trimmed.match(/^(\d+)\.\s+(.*)$/)
     if (orderedMatch) {
       flushParagraph()
@@ -264,12 +222,10 @@ function parseMarkdown(content: string) {
       continue
     }
 
-    // Regular text - add to current paragraph
     flushList()
     currentParagraph.push(trimmed)
   }
 
-  // Flush any remaining content
   flushParagraph()
   flushList()
 
@@ -286,30 +242,43 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   return (
     <main className="min-h-screen bg-background px-6 py-16 md:py-24 flex flex-col">
-      <article className="mx-auto max-w-md flex-1">
+      <article className="mx-auto max-w-2xl w-full flex-1">
+        <div className="flex items-center gap-4 mb-8">
+          <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0">
+            <Image src="/avatars/cults.png" alt="PCBO" fill className="object-cover object-center" />
+          </div>
+          <nav className="flex gap-4 text-sm text-muted-foreground">
+            <Link href="/" className="hover:text-foreground transition-colors">Writing</Link>
+            <Link href="/about" className="hover:text-foreground transition-colors">About</Link>
+            <Link href="/projects" className="hover:text-foreground transition-colors">Projects</Link>
+          </nav>
+        </div>
+
         <h1 className="text-2xl font-medium text-foreground mb-2">{post.title}</h1>
-
-        <Link href="/" className="inline-block mb-6 text-muted-foreground hover:text-foreground transition-colors">
-          ← Back home
-        </Link>
-
         <p className="text-sm text-muted-foreground mb-8">{post.date}</p>
 
         <div className="prose prose-invert prose-sm max-w-none">{parseMarkdown(post.content)}</div>
+
+        <div className="mt-12 pt-8 border-t border-muted">
+          <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+            ← All posts
+          </Link>
+        </div>
       </article>
 
-      <footer className="mx-auto max-w-md w-full mt-16 pt-8 border-t border-muted">
+      <footer className="mx-auto max-w-2xl w-full mt-16 pt-8 border-t border-muted">
         <p className="text-sm text-muted-foreground">
-          Vibe coded from Lisbon by{" "}
-          <a
-            href="https://x.com/pcbo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-foreground transition-colors"
-          >
-            PCBO
+          <a href="https://x.com/pcbo" target="_blank" rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors">
+            X
           </a>
-          .
+          {" · "}
+          <a href="https://github.com/pcbo" target="_blank" rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors">
+            GitHub
+          </a>
+          {" · "}
+          Lisbon
         </p>
       </footer>
     </main>

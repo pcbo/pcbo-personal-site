@@ -1,0 +1,29 @@
+---
+title: "Summer Builders NFT Collection: Post-Mortem"
+description: "Reflections on launching the Summer..."
+date: "June 8, 2024"
+slug: "post8"
+---
+
+### Summer Builders NFT Post-Mortem
+
+**Distribution Challenges:**
+- Our launch date coincided with peak Onchain Summer activity
+- Neither me nor Simon have high Social Capital on Farcaster, yet...
+
+**Supply Strategy:**
+- High NFT supply (1000 mints, we had less than 100...) was overambitious
+
+**Community Engagement:**
+- Some OGs loved the collection enough to actively share, some others just thought it was funny
+- If we did more research work and better storytelling, they'd probably feel more engaged
+
+**Aesthetics:**
+- Could have played better with aesthetics and used colors more aligned with Base
+
+**Influencers:**
+- Involving some Farcaster celebrities would have helped "farm" more attention
+
+**Next Steps:**
+- Focus on building personal social capital on Farcaster
+- Apply these learnings to future projects

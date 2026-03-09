@@ -1,0 +1,29 @@
+---
+title: "First Commit to Talent Protocol Org"
+description: "Made first commit ever to Talent..."
+date: "May 29, 2024"
+slug: "post3"
+---
+
+### Contributing to Talent Protocol
+
+**What:**
+1. CTO Leal added me as contributor to Talent Protocol org
+2. Updated README with our mission statement
+3. Archived few old unused repos
+
+**README Update:**
+- Added new section with our mission
+- "We are on a mission to help the next generation of builders succeed by making professional reputation data easily accessible and human potential more visible"
+
+**Housekeeping:**
+- Explored org repos and identified inactive ones
+- Archived repos for old products/projects
+
+**Feelings:**
+- Exciting to directly contribute to Talent Protocol even if it's just a README update
+- Still, adding our core mission felt good
+- Housekeeping is always good too
+
+**Next:**
+- Add my PFP to pcbo.xyz

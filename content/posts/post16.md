@@ -1,0 +1,22 @@
+---
+title: "Out of the Black Hole"
+description: "What happened since last Summer"
+date: "April 10, 2025"
+slug: "post16"
+---
+
+### Disappeared for a While...
+
+**Post-BUILDathon 2024 Reality:**
+- After the July 2024 entry, we entered TGE prep aka full token launch mode
+- All-in on legal, tokenomics, liquidity, and ops
+- Writing fell off the radar, energy went into shipping and surviving Token Launch season
+
+**Still Kept Building:**
+- Built a personal goals tracker with Lovable, super lightweight and use it every day to track health habits
+- Created my Chief of Staff AI on ChatGPT, my CEO productivity has 10x'd
+
+**Next Steps:**
+- Relaunch the tracker with better UX
+- Explore new build ideas, a few are brewing...
+- Use this space more consistently to document and stay accountable
