@@ -31,7 +31,7 @@ export default function Home() {
           </a>, co-pilot at{" "}
           <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer"
             className="underline underline-offset-4 hover:text-muted-foreground transition-colors">
-            Zeno Vision
+            Zeno
           </a>, and building in public from Lisbon.
         </p>
 
