@@ -1,13 +1,13 @@
 ---
 title: "Setting Up Coding Blog on Vercel"
-description: "Configured Vercel to deploy a..."
+description: "First blog, first deploy. Vercel + GitHub integration is smooth."
 date: "May 27, 2024"
-slug: "post1"
+slug: "vercel-blog-setup"
 ---
 
 ### Blog Setup with Vercel
 
-**What:**
+**What I did:**
 1. Signed up for Vercel, connected to GitHub
 2. Created new public GitHub repo
 3. Pointed Vercel to new repo for deployment
@@ -19,7 +19,7 @@ slug: "post1"
 - Pretty rusty on pretty much everything
 
 **Learnings:**
-- Impressed with GitHub <> Vercel integration, smooth af
+- Impressed with GitHub + Vercel integration, smooth af
 
-**Next Steps:**
+**Next:**
 - Further remove clutter from site

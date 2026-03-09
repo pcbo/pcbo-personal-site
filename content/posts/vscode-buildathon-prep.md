@@ -1,20 +1,20 @@
 ---
 title: "VSCode and Buildathon Prep"
-description: "Started using VSCode, and started..."
+description: "First code change in VSCode. Registered for Onchain Summer Buildathon."
 date: "June 3, 2024"
-slug: "post5"
+slug: "vscode-buildathon-prep"
 ---
 
-### VSCode & Buildathon
+### VSCode and Buildathon
 
-**Progress Report:**
+**Progress:**
 - Did my first code change and commit using VSCode + GitHub Desktop
-- Registered for Onchain Summer Buildathon on Devfolio, add to stake some ETH to show my builder commitment
+- Registered for Onchain Summer Buildathon on Devfolio, had to stake some ETH to show builder commitment
 - Also minted a [SupaBald Jess](https://opensea.io/assets/base/0xb27b1369808c817d61baca58833232f97add28ea/70)
-- Started working on a PWA health app project for the Buildathon (which will substitute the one I use nowadays...)
-- Created and shared first app functionality draft document and shared with my accountability buddies (Nuno and Leal)
+- Started working on a PWA health app project for the Buildathon
+- Created and shared first app functionality draft with my accountability buddies (Nuno and Leal)
 
-**Gratitude To:**
+**Thanks to:**
 - Filipe for helping edit Figma design file
 - Leal for helping with deployment issue troubleshooting
 
@@ -22,10 +22,10 @@ slug: "post5"
 - Still waiting on product designer feedback on some assets issue
 
 **Learnings:**
-- Coding today vs 10-years ago is just wow!
+- Coding today vs 10 years ago is just wow
 - Always send a loom to designers (instead of writing) to facilitate comms
 
 **Next:**
-- Start using branches and pull requests instead of committing to main (for Talent Protocol repo)
+- Start using branches and pull requests instead of committing to main
 - Iterate on PWA app based on feedback from Nuno and Leal
 - Define next steps for Buildathon project
