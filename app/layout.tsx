@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     template: "%s | PCBO",
   },
   description: "Pedro Oliveira. CEO at Talent, co-founder of CTO Portugal, co-pilot at Zeno Vision. Building from Lisbon.",
-  metadataBase: new URL("https://pcbo.dev"),
+  metadataBase: new URL("https://www.pcbo.dev"),
   openGraph: {
     title: "PCBO",
     description: "Pedro Oliveira. CEO at Talent, co-founder of CTO Portugal, co-pilot at Zeno Vision. Building from Lisbon.",
-    url: "https://pcbo.dev",
+    url: "https://www.pcbo.dev",
     siteName: "PCBO",
     images: [
       {
