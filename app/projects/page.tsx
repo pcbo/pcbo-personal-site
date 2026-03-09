@@ -24,13 +24,6 @@ const projects = [
     active: true,
   },
   {
-    name: "Onchain Lisbon",
-    description: "Builder event aggregator for Lisbon's onchain scene.",
-    url: "https://onchainlisbon.com",
-    role: "Co-organizer",
-    active: true,
-  },
-  {
     name: "Zeno Vision",
     description: "AI studio. Co-pilot and minority owner.",
     url: "https://zeno.vision",

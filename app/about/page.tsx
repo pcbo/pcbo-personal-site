@@ -48,10 +48,6 @@ export default function AboutPage() {
             <a href="https://agentsday.org" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Agents Day
-            </a>{" "}and{" "}
-            <a href="https://onchainlisbon.com" target="_blank" rel="noopener noreferrer"
-              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              Onchain Lisbon
             </a>.
           </p>
 
