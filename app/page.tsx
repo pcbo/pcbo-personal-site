@@ -10,7 +10,7 @@ export default function Home() {
       <div className="mx-auto max-w-2xl w-full flex-1">
         <div className="flex items-center gap-4 mb-8">
           <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0">
-            <Image src="/avatars/cults.png" alt="PCBO" fill className="object-cover object-center" />
+            <Image src="/avatars/pcbo.jpg" alt="PCBO" fill className="object-cover object-center" />
           </div>
           <nav className="flex gap-4 text-sm text-muted-foreground">
             <Link href="/" className="text-foreground font-medium">Writing</Link>
