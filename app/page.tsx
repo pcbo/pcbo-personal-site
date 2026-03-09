@@ -9,9 +9,8 @@ export default function Home() {
     <main className="min-h-screen bg-background px-6 py-16 md:py-24 flex flex-col">
       <div className="mx-auto max-w-2xl w-full flex-1">
         <div className="flex items-center gap-4 mb-8">
-          <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0">
-            <Image src="/avatars/pcbo.jpg" alt="PCBO" fill className="object-cover object-center" />
-          </div>
+          <Link href="/"><div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 cursor-pointer">
+            <Image src="/avatars/pcbo.jpg" alt="PCBO" fill className="object-cover object-center" /></div></Link>
           <nav className="flex gap-4 text-sm text-muted-foreground">
             <Link href="/" className="text-foreground font-medium">Writing</Link>
             <Link href="/about" className="hover:text-foreground transition-colors">About</Link>
