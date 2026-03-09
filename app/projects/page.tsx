@@ -32,7 +32,7 @@ const projects = [
   },
   {
     name: "Landing.jobs",
-    description: "Tech recruitment platform. Co-founded in 2014, ran for nearly 10 years.",
+    description: "Tech recruitment platform. Co-founded in 2014, exited in 2020.",
     url: "https://landing.jobs",
     role: "Co-founder (past)",
     active: false,
