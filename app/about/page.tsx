@@ -44,7 +44,7 @@ export default function AboutPage() {
             <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               CTO Portugal
-            </a>, a community of 600+ CTOs. I organize{" "}
+            </a>, a community of 600+ Tech and AI leaders who call Portugal home. I organize{" "}
             <a href="https://agentsday.org" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Agents Day
