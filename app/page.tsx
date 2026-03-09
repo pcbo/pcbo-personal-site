@@ -28,6 +28,10 @@ export default function Home() {
           <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer"
             className="underline underline-offset-4 hover:text-muted-foreground transition-colors">
             CTO Portugal
+          </a>, co-pilot at{" "}
+          <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer"
+            className="underline underline-offset-4 hover:text-muted-foreground transition-colors">
+            Zeno Vision
           </a>, and building in public from Lisbon.
         </p>
 
