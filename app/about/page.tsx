@@ -36,7 +36,11 @@ export default function AboutPage() {
           </p>
 
           <p>
-            I also co-founded{" "}
+            I co-pilot{" "}
+            <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
+              Zeno Vision
+            </a>, an AI studio. I also co-founded{" "}
             <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               CTO Portugal
@@ -74,15 +78,9 @@ export default function AboutPage() {
               </a>
             </li>
             <li>
-              <a href="https://t.me/pedrocbo" target="_blank" rel="noopener noreferrer"
+              <a href="https://talent.app/profile/pedrocbo" target="_blank" rel="noopener noreferrer"
                 className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-                Telegram
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/pcbo" target="_blank" rel="noopener noreferrer"
-                className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-                GitHub
+                Talent
               </a>
             </li>
           </ul>

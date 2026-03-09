@@ -10,13 +10,6 @@ const projects = [
     active: true,
   },
   {
-    name: "Noticed",
-    description: "Talent agents and AI-native tools for builder discovery.",
-    url: null,
-    role: "Co-founder",
-    active: true,
-  },
-  {
     name: "CTO Portugal",
     description: "Community of 600+ CTOs. Weekly roundtables, high-trust, no fluff.",
     url: "https://ctoportugal.ai",
@@ -39,9 +32,9 @@ const projects = [
   },
   {
     name: "Zeno Vision",
-    description: "AI studio. Advisor and minority owner.",
+    description: "AI studio. Co-pilot and minority owner.",
     url: "https://zeno.vision",
-    role: "Advisor",
+    role: "Co-pilot",
     active: true,
   },
   {
