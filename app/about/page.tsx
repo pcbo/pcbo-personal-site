@@ -63,23 +63,6 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-muted">
-          <h2 className="text-foreground font-medium mb-4">Get in touch</h2>
-          <ul className="space-y-2 text-muted-foreground">
-            <li>
-              <a href="https://x.com/pcbo" target="_blank" rel="noopener noreferrer"
-                className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-                X (@pcbo)
-              </a>
-            </li>
-            <li>
-              <a href="https://talent.app/pcbo" target="_blank" rel="noopener noreferrer"
-                className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-                Talent
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
 
       <footer className="mx-auto max-w-2xl w-full mt-16 pt-8 border-t border-muted">
@@ -92,6 +75,11 @@ export default function AboutPage() {
           <a href="https://github.com/pcbo" target="_blank" rel="noopener noreferrer"
             className="hover:text-foreground transition-colors">
             GitHub
+          </a>
+          {" · "}
+          <a href="https://talent.app/pcbo" target="_blank" rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors">
+            Talent
           </a>
           {" · "}
           Lisbon

@@ -63,6 +63,11 @@ export default function Home() {
             GitHub
           </a>
           {" · "}
+          <a href="https://talent.app/pcbo" target="_blank" rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors">
+            Talent
+          </a>
+          {" · "}
           Lisbon
         </p>
       </footer>
