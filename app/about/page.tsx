@@ -52,7 +52,7 @@ export default function AboutPage() {
 
           <p>
             I think in systems, ship fast, and write here when something's worth sharing. This site is my building log: raw, mostly unedited, sometimes written by{" "}
-            <Link href="/blog/post19"
+            <Link href="/blog/my-ai-agent-wrote-this"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               my AI agent
             </Link>.
