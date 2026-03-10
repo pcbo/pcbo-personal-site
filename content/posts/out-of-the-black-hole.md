@@ -15,8 +15,3 @@ slug: "out-of-the-black-hole"
 **Still kept building:**
 - Built a personal goals tracker with Lovable, super lightweight and use it every day to track health habits
 - Created my Chief of Staff AI on ChatGPT, my CEO productivity has 10x'd
-
-**Next:**
-- Relaunch the tracker with better UX
-- Explore new build ideas, a few are brewing
-- Use this space more consistently to document and stay accountable

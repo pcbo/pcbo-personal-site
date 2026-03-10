@@ -26,20 +26,7 @@ slug: "summer-builders-nft"
 - Simon, pleasure working (mostly async) together
 - We always come up with cool, creative ideas
 
-**Learnings:**
-- Main issue was distribution and getting visibility
-- Our launch coincided with peak Onchain Summer activity
-- Very noisy, hard to cut through with promotion
-- Neither of us have high social capital scores on Farcaster, yet
-- 100 NFT supply per character was overambitious for a new collection
-- Should have kept it to 10 mints max per Summer Builder NFT
-
 **Takeaways:**
 - Distribution is key, especially in crowded markets
 - Social capital and community building matters
 - Start smaller for new NFT projects, selling out is important: scale comes later
-
-**Next:**
-- Revealing all characters in the next few days on Farcaster
-- Keep promoting the collection on different channels
-- Try the Farcaster frame feature on Zora and create a Bounty through Bountycaster

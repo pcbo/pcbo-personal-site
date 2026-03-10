@@ -13,9 +13,3 @@ slug: "buildathon-day-3"
 - Finalized [GETFIT app](https://www.oracles.fit)
 - [Rounds up and running](https://rounds.wtf/fitness/getfit-1)
 - Check [submission page on Devfolio](https://devfolio.co/projects/getfit-a70c)
-
-**Next:**
-- Create doc with future work ideas
-- Work on some improvements
-- Plan $GETFIT token
-- Create another log to go deeper into learnings

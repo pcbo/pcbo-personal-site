@@ -16,7 +16,3 @@ slug: "adding-image-assets"
 - Typed '.' in repo which opened web editor
 - Made and committed changes directly in browser UI
 - Using GitHub now compared to 10 years ago is such a good vibe :)
-
-**Next:**
-- Overcome issues with image updates on talentprotocol.com
-- Create a new structure on pcbo.xyz, for deeper thoughts, side by side with log entries

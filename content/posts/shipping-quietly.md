@@ -16,6 +16,3 @@ slug: "shipping-quietly"
 - Made some contributions recently to BUILD and the Passport app
 - Getting more and more comfortable with coding
 - All core team members will become code-ready. We're a team of builders, so everyone should ship software
-
-**Next:**
-- Keep building and shipping

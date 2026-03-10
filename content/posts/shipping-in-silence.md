@@ -17,8 +17,3 @@ slug: "shipping-in-silence"
   2. Craft the prompt
   3. Build on [v0.dev](https://v0.dev)
   4. Share with Talent team
-
-**Next:**
-- Participating in a hackathon again: Base Batch Europe
-- Can't say much yet, but we're cooking a new search experience for Talent Protocol
-- Complete [Base Learn](https://docs.base.org/learn/welcome)

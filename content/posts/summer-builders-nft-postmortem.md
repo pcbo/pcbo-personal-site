@@ -23,7 +23,3 @@ slug: "summer-builders-nft-postmortem"
 
 **Influencers:**
 - Involving some Farcaster celebrities would have helped "farm" more attention
-
-**Next:**
-- Focus on building personal social capital on Farcaster
-- Apply these learnings to future projects

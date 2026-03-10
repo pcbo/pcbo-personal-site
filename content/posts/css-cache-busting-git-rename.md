@@ -21,8 +21,3 @@ slug: "css-cache-busting-git-rename"
 
 **Thanks to:**
 - Learned these techniques from Leal. [Dr. Peter Venkman would be proud](https://warpcast.com/pcbo/0x66f25aa3)
-
-**Learnings:**
-- Cloudflare caching can cause outdated CSS to persist, be mindful for future CSS updates
-- Cache busting with versioned query params is a simple solution
-- Git doesn't track case-only renames automatically, use consistent casing from the start

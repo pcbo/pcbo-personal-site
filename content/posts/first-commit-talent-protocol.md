@@ -24,6 +24,3 @@ slug: "first-commit-talent-protocol"
 - Exciting to directly contribute to Talent Protocol even if it's just a README update
 - Adding our core mission felt good
 - Housekeeping is always good too
-
-**Next:**
-- Add my PFP to pcbo.xyz

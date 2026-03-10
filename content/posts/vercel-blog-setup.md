@@ -17,9 +17,3 @@ slug: "vercel-blog-setup"
 **Challenges:**
 - Had to sanity-check DNS settings on Namecheap
 - Pretty rusty on pretty much everything
-
-**Learnings:**
-- Impressed with GitHub + Vercel integration, smooth af
-
-**Next:**
-- Further remove clutter from site

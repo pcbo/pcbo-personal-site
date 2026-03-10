@@ -17,15 +17,3 @@ slug: "vscode-buildathon-prep"
 **Thanks to:**
 - Filipe for helping edit Figma design file
 - Leal for helping with deployment issue troubleshooting
-
-**Blockers:**
-- Still waiting on product designer feedback on some assets issue
-
-**Learnings:**
-- Coding today vs 10 years ago is just wow
-- Always send a loom to designers (instead of writing) to facilitate comms
-
-**Next:**
-- Start using branches and pull requests instead of committing to main
-- Iterate on PWA app based on feedback from Nuno and Leal
-- Define next steps for Buildathon project
