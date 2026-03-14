@@ -27,7 +27,7 @@ export default function AboutPage() {
             <a href="https://talent.app" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Talent
-            </a>, where we're making professional reputation data accessible and builder potential visible. Before that, I co-founded{" "}
+            </a>, a builder attention marketplace where companies find and reward high-quality builders with real track record. Before that, I co-founded{" "}
             <a href="https://landing.jobs" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Landing.jobs
