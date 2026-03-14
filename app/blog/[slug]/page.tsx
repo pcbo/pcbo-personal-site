@@ -309,8 +309,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             className="hover:text-foreground transition-colors">
             Talent
           </a>
-          {" · "}
-          Lisbon
+          
         </p>
       </footer>
     </main>

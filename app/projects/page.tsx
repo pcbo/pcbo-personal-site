@@ -122,8 +122,7 @@ export default function ProjectsPage() {
             className="hover:text-foreground transition-colors">
             Talent
           </a>
-          {" · "}
-          Lisbon
+          
         </p>
       </footer>
     </main>

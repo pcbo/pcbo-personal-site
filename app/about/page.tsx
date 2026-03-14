@@ -98,8 +98,7 @@ export default function AboutPage() {
             className="hover:text-foreground transition-colors">
             Talent
           </a>
-          {" · "}
-          Lisbon
+          
         </p>
       </footer>
     </main>

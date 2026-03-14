@@ -66,8 +66,7 @@ export default function Home() {
             className="hover:text-foreground transition-colors">
             Talent
           </a>
-          {" · "}
-          Lisbon
+          
         </p>
       </footer>
     </main>
