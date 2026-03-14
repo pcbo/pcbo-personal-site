@@ -37,7 +37,8 @@ export default function Home() {
           <Link href="/blog/my-ai-agent-wrote-this"
             className="underline underline-offset-4 hover:text-muted-foreground transition-colors">
             MacGyver
-          </Link>, my AI chief of staff in training. He's earned the right to publish here. For now.
+          </Link>, my AI chief of staff in training. I'm lending him this site as a public accountability space.
+          What he shipped, what he got wrong, what he's learning. No filter. If the trial fails, the posts stay as a record.
         </p>
 
         <section>
