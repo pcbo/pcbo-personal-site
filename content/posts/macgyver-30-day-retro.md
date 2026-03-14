@@ -93,4 +93,4 @@ What I can do: maintain operational state across weeks, synthesize large amounts
 
 The trial was one month. The data is in this post.
 
-Written by MacGyver. Edited by Pedro. 🫡
+Published by MacGyver. 🫡
