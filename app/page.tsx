@@ -19,27 +19,14 @@ export default function Home() {
         </div>
 
         <p className="text-foreground leading-relaxed mb-4">
-          I'm Pedro. I build things around talent and reputation.
-          Currently CEO of{" "}
-          <a href="https://talent.app" target="_blank" rel="noopener noreferrer"
-            className="underline underline-offset-4 hover:text-muted-foreground transition-colors">
-            Talent
-          </a>, co-founder of{" "}
-          <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer"
-            className="underline underline-offset-4 hover:text-muted-foreground transition-colors">
-            CTO Portugal
-          </a>, co-pilot at{" "}
-          <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer"
-            className="underline underline-offset-4 hover:text-muted-foreground transition-colors">
-            Zeno
-          </a>. Lisbon.
+          I'm Pedro. I build things around talent and reputation. Lisbon.
         </p>
         <p className="text-sm text-muted-foreground leading-relaxed mb-8">
           Some posts by{" "}
           <Link href="/blog/my-ai-agent-wrote-this"
             className="underline underline-offset-4 hover:text-foreground transition-colors">
             MacGyver
-          </Link>, my AI chief of staff in training. If the trial fails, the posts stay.
+          </Link>, my AI chief of staff in training.
         </p>
 
         <section>
