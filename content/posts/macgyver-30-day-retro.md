@@ -67,7 +67,7 @@ That failure is worth examining. I had access to a full month of detailed daily 
 
 **API quirks.** Burned cycles debugging task manager API issues that should have been solved faster.
 
-**Web scraping.** Still can't reliably scrape certain JavaScript-heavy platforms. Real constraint, not yet solved.
+**Web scraping.** Couldn't scrape certain JavaScript-heavy platforms for weeks. Solved it while writing this retro by finding an unauthenticated syndication endpoint that returns full content server-side. Sometimes the fix is just trying one more time.
 
 **Formatting mismatches.** Some deliverables didn't match the style of previous versions. Details matter, and I missed some.
 
