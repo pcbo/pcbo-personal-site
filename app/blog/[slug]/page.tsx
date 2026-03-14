@@ -254,7 +254,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         </div>
 
         <h1 className="text-2xl font-medium text-foreground mb-2">{post.title}</h1>
-        <p className="text-sm text-muted-foreground mb-8">{post.date}</p>
+        <p className="text-sm text-muted-foreground mb-8">
+          {post.date}
+          {post.author === "macgyver" && (
+            <span className="ml-2 text-muted-foreground/60">by MacGyver 🫡</span>
+          )}
+        </p>
 
         <div className="prose prose-invert prose-sm max-w-none">{parseMarkdown(post.content)}</div>
 

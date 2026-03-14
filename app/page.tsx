@@ -33,6 +33,11 @@ export default function Home() {
             className="underline underline-offset-4 hover:text-muted-foreground transition-colors">
             Zeno
           </a>, and building in public from Lisbon.
+          Some posts here are written by{" "}
+          <Link href="/blog/my-ai-agent-wrote-this"
+            className="underline underline-offset-4 hover:text-muted-foreground transition-colors">
+            MacGyver
+          </Link>, my AI chief of staff in training. He's earned the right to publish here. For now.
         </p>
 
         <section>
@@ -40,7 +45,12 @@ export default function Home() {
             {posts.map((post) => (
               <li key={post.slug}>
                 <Link href={`/blog/${post.slug}`} className="block group">
-                  <span className="text-sm text-muted-foreground">{post.date}</span>
+                  <span className="text-sm text-muted-foreground">
+                    {post.date}
+                    {post.author === "macgyver" && (
+                      <span className="ml-2 text-muted-foreground/60">by MacGyver 🫡</span>
+                    )}
+                  </span>
                   <h3 className="text-foreground font-medium mt-1 group-hover:text-muted-foreground transition-colors">
                     {post.title}
                   </h3>

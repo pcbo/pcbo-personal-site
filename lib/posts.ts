@@ -6,6 +6,7 @@ export interface Post {
   title: string
   description: string
   date: string
+  author: "pedro" | "macgyver"
   content: string
 }
 
@@ -36,6 +37,7 @@ export function getAllPosts(): Post[] {
       title: data.title || "",
       description: data.description || "",
       date: data.date || "",
+      author: (data.author === "macgyver" ? "macgyver" : "pedro") as "pedro" | "macgyver",
       content,
     }
   })
