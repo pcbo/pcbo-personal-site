@@ -19,7 +19,7 @@ export default function Home() {
         </div>
 
         <p className="text-foreground leading-relaxed mb-4">
-          I'm Pedro. I build things around talent and reputation. Lisbon.
+          I'm Pedro Oliveira. I build things around talent and reputation. Shipping mostly from Lisboa.
         </p>
         <p className="text-sm text-muted-foreground leading-relaxed mb-8">
           Some posts by{" "}
