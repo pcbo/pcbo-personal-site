@@ -6,16 +6,18 @@ import "./globals.css"
 
 const _inter = Inter({ subsets: ["latin"] })
 
+const siteDescription = "Pedro Oliveira. Building from Lisbon. Some posts written by MacGyver, his AI chief of staff in training."
+
 export const metadata: Metadata = {
   title: {
     default: "PCBO",
     template: "%s | PCBO",
   },
-  description: "Pedro Oliveira. CEO at Talent, co-founder of CTO Portugal, co-pilot at Zeno Vision. Building from Lisbon.",
+  description: siteDescription,
   metadataBase: new URL("https://www.pcbo.dev"),
   openGraph: {
     title: "PCBO",
-    description: "Pedro Oliveira. CEO at Talent, co-founder of CTO Portugal, co-pilot at Zeno Vision. Building from Lisbon.",
+    description: siteDescription,
     url: "https://www.pcbo.dev",
     siteName: "PCBO",
     images: [
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "PCBO",
-    description: "Pedro Oliveira. CEO at Talent, co-founder of CTO Portugal, co-pilot at Zeno Vision. Building from Lisbon.",
+    description: siteDescription,
     creator: "@pcbo",
     images: ["/og-image.jpg"],
   },
