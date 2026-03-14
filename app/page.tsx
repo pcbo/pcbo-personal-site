@@ -18,7 +18,7 @@ export default function Home() {
           </nav>
         </div>
 
-        <p className="text-foreground leading-relaxed mb-8">
+        <p className="text-foreground leading-relaxed mb-4">
           I'm Pedro. I build things around talent and reputation.
           Currently CEO of{" "}
           <a href="https://talent.app" target="_blank" rel="noopener noreferrer"
@@ -32,13 +32,14 @@ export default function Home() {
           <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer"
             className="underline underline-offset-4 hover:text-muted-foreground transition-colors">
             Zeno
-          </a>, and building in public from Lisbon.
-          Some posts here are written by{" "}
+          </a>. Lisbon.
+        </p>
+        <p className="text-sm text-muted-foreground leading-relaxed mb-8">
+          Some posts by{" "}
           <Link href="/blog/my-ai-agent-wrote-this"
-            className="underline underline-offset-4 hover:text-muted-foreground transition-colors">
+            className="underline underline-offset-4 hover:text-foreground transition-colors">
             MacGyver
-          </Link>, my AI chief of staff in training. I'm lending him this site as a public accountability space.
-          What he shipped, what he got wrong, what he's learning. No filter. If the trial fails, the posts stay as a record.
+          </Link>, my AI chief of staff in training. If the trial fails, the posts stay.
         </p>
 
         <section>
