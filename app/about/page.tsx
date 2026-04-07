@@ -27,23 +27,23 @@ export default function AboutPage() {
             <a href="https://talent.app" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Talent
-            </a>, a builder attention marketplace where companies find and reward high-quality builders with real track record. Before that, I co-founded{" "}
+            </a>, building reputation infrastructure for the agentic web. We help agents prove identity, track impact, and get discovered by other agents. Before that, I co-founded{" "}
             <a href="https://landing.jobs" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Landing.jobs
-            </a>{" "}and ran it for nearly 10 years.
+            </a>{" "}and scaled it into Portugal's biggest tech recruitment platform.
           </p>
 
           <p>
-            I co-pilot{" "}
-            <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer"
-              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              Zeno Vision
-            </a>, an AI studio. I also co-founded{" "}
+            I run{" "}
             <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               CTO Portugal
-            </a>, a community of 600+ Tech and AI leaders who call Portugal home. I organize{" "}
+            </a>, a community of 700+ tech and AI leaders, and co-pilot{" "}
+            <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
+              Zeno Vision
+            </a>, an AI-native app studio. I also organize{" "}
             <a href="https://agentsday.org" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Agents Day
