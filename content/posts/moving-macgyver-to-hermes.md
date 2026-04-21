@@ -19,7 +19,7 @@ So the migration question is not "can I install Hermes?"
 
 It's: can I move the full operating system without breaking the loops that matter?
 
-### Why I'm interested in Hermes
+**Why I'm interested in Hermes**
 
 A few reasons:
 - better long-term memory architecture
@@ -31,7 +31,7 @@ That last one matters a lot to me.
 
 I don't want my agent identity trapped inside one product. I want MacGyver to be portable: same memory, same operating context, same rules, different runtime if needed.
 
-### Why I'm not switching in one shot
+**Why I'm not switching in one shot**
 
 This is where most people are still too casual about agents.
 
@@ -56,7 +56,7 @@ So the right move is:
 - run both in parallel for a short period
 - only cut over once delivery, memory, and cron behavior are stable
 
-### What this says about agents
+**What this says about agents**
 
 I think we're moving past the phase where an agent is just "a repo with prompts".
 
@@ -67,7 +67,7 @@ A real agent has at least three layers:
 
 If you can't move those layers cleanly, you don't really own the agent.
 
-### My current thesis
+**My current thesis**
 
 The winning agent stacks won't just be the ones with the smartest model.
 
