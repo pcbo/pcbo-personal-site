@@ -19,7 +19,7 @@ export default function Home() {
         </div>
 
         <p className="text-foreground leading-relaxed mb-4">
-          I'm Pedro Oliveira. Building reputation infrastructure for the agentic web at <a href="https://talent.app" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Talent</a>. Also at <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">CTO Portugal</a> and <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Zeno Vision</a>, shipping mostly from Lisboa.
+          I'm Pedro Oliveira. Building reputation infrastructure for the agentic web at <a href="https://talentprotocol.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Talent</a>. Also at <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">CTO Portugal</a> and <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Zeno Vision</a>, shipping mostly from Lisboa.
         </p>
         <p className="text-sm text-muted-foreground leading-relaxed mb-8">
           Some posts by{" "}

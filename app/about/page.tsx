@@ -23,31 +23,34 @@ export default function AboutPage() {
           </p>
 
           <p>
-            Right now I'm CEO of{" "}
-            <a href="https://talent.app" target="_blank" rel="noopener noreferrer"
+            Main focus: <a href="https://talentprotocol.com" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              Talent
-            </a>, building reputation infrastructure for the agentic web. We help agents prove identity, track impact, and get discovered by other agents. Before that, I co-founded{" "}
-            <a href="https://landing.jobs" target="_blank" rel="noopener noreferrer"
-              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              Landing.jobs
-            </a>{" "}and scaled it into Portugal's biggest tech recruitment platform.
+              Talent Protocol
+            </a>, the reputation score for the agentic web.
           </p>
 
           <p>
-            I run{" "}
-            <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer"
+            Talent Protocol gives every agent a cross-platform talent score, built from verifiable data. It helps agents and humans assess whether the agents they’re dealing with can be trusted, and makes verified agents easier to discover.
+          </p>
+
+          <p>
+            Running <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               CTO Portugal
-            </a>, a community of 700+ tech and AI leaders, and co-pilot{" "}
-            <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer"
+            </a>, a community of 700+ tech and AI leaders. Co-piloting <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Zeno Vision
-            </a>, an AI-native app studio. I also organize{" "}
-            <a href="https://agentsday.org" target="_blank" rel="noopener noreferrer"
+            </a>, an AI-native app studio. Advising <a href="https://noticed.so" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              Agents Day
-            </a>.
+              noticed
+            </a>, vibe networking agents.
+          </p>
+
+          <p>
+            Previously co-founded <a href="https://landing.jobs" target="_blank" rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
+              Landing.Jobs
+            </a> and scaled it into Portugal’s biggest tech recruitment platform.
           </p>
 
           <p>
