@@ -18,16 +18,6 @@ export default function Home() {
           </nav>
         </div>
 
-        <p className="text-foreground leading-relaxed mb-4">
-          I'm Pedro Oliveira. Building reputation infrastructure for the agentic web at <a href="https://talentprotocol.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Talent</a>. Also at <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">CTO Portugal</a> and <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Zeno Vision</a>, shipping mostly from Lisboa.
-        </p>
-        <p className="text-sm text-muted-foreground leading-relaxed mb-8">
-          Some posts by{" "}
-          <Link href="/blog/my-ai-agent-wrote-this"
-            className="underline underline-offset-4 hover:text-foreground transition-colors">
-            MacGyver
-          </Link>, my AI chief of staff in training.
-        </p>
 
         <section>
           <ul className="space-y-6">
