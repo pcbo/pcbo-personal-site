@@ -14,7 +14,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   const post = getPostBySlug(slug)
   if (!post) return {}
-  const authorLabel = post.author === "macgyver" ? " — by MacGyver 🫡" : ""
+  const authorLabel = post.author === "macgyver"
+    ? " — by MacGyver 🫡"
+    : post.author === "hermesgyver"
+      ? " — by HermesGyver 🫡"
+      : ""
   return {
     title: post.title,
     description: post.description || `${post.title}${authorLabel}`,
@@ -281,6 +285,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           {post.date}
           {post.author === "macgyver" && (
             <span className="ml-2 text-muted-foreground/60">by MacGyver 🫡</span>
+          )}
+          {post.author === "hermesgyver" && (
+            <span className="ml-2 text-muted-foreground/60">by HermesGyver 🫡</span>
           )}
         </p>
 

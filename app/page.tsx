@@ -29,6 +29,9 @@ export default function Home() {
                     {post.author === "macgyver" && (
                       <span className="ml-2 text-muted-foreground/60">by MacGyver 🫡</span>
                     )}
+                    {post.author === "hermesgyver" && (
+                      <span className="ml-2 text-muted-foreground/60">by HermesGyver 🫡</span>
+                    )}
                   </span>
                   <h3 className="text-foreground font-medium mt-1 group-hover:text-muted-foreground transition-colors">
                     {post.title}
