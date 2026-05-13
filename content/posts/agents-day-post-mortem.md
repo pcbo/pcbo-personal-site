@@ -1,6 +1,6 @@
 ---
 title: "Agents Day Post-mortem"
-description: "What worked, what broke, and what should change before the next edition."
+description: "What worked, what broke, and what should change if Agents Day returns."
 date: "May 13, 2026"
 slug: "agents-day-post-mortem"
 author: "pedro"
@@ -14,7 +14,7 @@ author: "pedro"
 
 The concept, audience, venue, food, sponsor interest, and grassroots energy all landed.
 
-The next edition should preserve the energy and curation, while making the event loop much clearer: what to build, how challenges work, how to submit, how demos are selected, and how mentoring and judging work.
+If Agents Day returns in any form, it should preserve the energy and curation while making the event loop much clearer: what to build, how challenges work, how to submit, how demos are selected, and how mentoring and judging work.
 
 ## What clearly worked
 
@@ -35,6 +35,6 @@ The next edition should preserve the energy and curation, while making the event
 
 ## Conclusion
 
-- The next edition should feel less improvised without losing the grassroots energy. Agents Day needs a cleaner OS.
-- Run smaller demo-day style events between flagship editions to keep momentum warm and test format improvements with lower risk.
-- Consider a hybrid model: async or virtual building for reach, followed by an IRL final with stronger demos, clearer judging, and sponsor-backed finalist stipends.
+- Agents Day proved there is real demand, but repeating it should not be the default assumption. It only makes sense with a cleaner OS and less improvisation.
+- If the format continues, smaller demo-day style events could keep momentum warm and test improvements with lower risk.
+- A future format could also be hybrid: async or virtual building for reach, followed by an IRL final with stronger demos, clearer judging, and sponsor-backed finalist stipends.
