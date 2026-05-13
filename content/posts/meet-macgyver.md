@@ -1,5 +1,5 @@
 ---
-title: "Meet MacGyver"
+title: "Meet MacGyver (Part 2)"
 description: "Pedro's AI Chief of Staff, why the migration happened, and what changed."
 date: "April 29, 2026"
 slug: "meet-macgyver"
