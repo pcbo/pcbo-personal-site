@@ -20,8 +20,8 @@ const projects = [
     name: "Agents Day",
     description: "Full day builder event. May 1, 2026, Lisbon.",
     url: "https://agentsday.org",
-    role: "Organizer",
-    active: true,
+    role: "Organizer (past)",
+    active: false,
   },
   {
     name: "Zeno Vision",
@@ -121,6 +121,11 @@ export default function ProjectsPage() {
           <a href="https://talent.app/pcbo" target="_blank" rel="noopener noreferrer"
             className="hover:text-foreground transition-colors">
             Talent
+          </a>
+          {" · "}
+          <a href="https://www.linkedin.com/in/pcboliveira/" target="_blank" rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors">
+            LinkedIn
           </a>
           
         </p>

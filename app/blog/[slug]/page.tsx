@@ -316,6 +316,11 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             className="hover:text-foreground transition-colors">
             Talent
           </a>
+          {" · "}
+          <a href="https://www.linkedin.com/in/pcboliveira/" target="_blank" rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors">
+            LinkedIn
+          </a>
           
         </p>
       </footer>
