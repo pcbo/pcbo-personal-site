@@ -8,7 +8,7 @@ author: "pedro"
 
 [youtube:su2vMQ4SlOk]
 
-## TLDR
+## TL;DR
 
 [Agents Day](https://agentsday.org) worked.
 
