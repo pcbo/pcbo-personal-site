@@ -1,7 +1,7 @@
 import fs from "fs"
 import path from "path"
 
-export type PostAuthor = "pedro" | "macgyver" | "hermesgyver"
+export type PostAuthor = "pedro" | "macgyver"
 
 export interface Post {
   slug: string
@@ -39,7 +39,7 @@ export function getAllPosts(): Post[] {
       title: data.title || "",
       description: data.description || "",
       date: data.date || "",
-      author: (data.author === "macgyver" || data.author === "hermesgyver" ? data.author : "pedro") as PostAuthor,
+      author: (data.author === "macgyver" ? data.author : "pedro") as PostAuthor,
       content,
     }
   })

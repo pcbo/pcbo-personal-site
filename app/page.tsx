@@ -1,22 +1,15 @@
 import Link from "next/link"
-import Image from "next/image"
 import { getAllPosts } from "@/lib/posts"
 
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 export default function Home() {
   const posts = getAllPosts()
 
   return (
     <main className="min-h-screen bg-background px-6 py-16 md:py-24 flex flex-col">
       <div className="mx-auto max-w-2xl w-full flex-1">
-        <div className="flex items-center gap-4 mb-8">
-          <Link href="/"><div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 cursor-pointer">
-            <Image src="/avatars/pcbo.jpg" alt="PCBO" fill className="object-cover object-center" /></div></Link>
-          <nav className="flex gap-4 text-sm text-muted-foreground">
-            <Link href="/" className="text-foreground font-medium">Writing</Link>
-            <Link href="/about" className="hover:text-foreground transition-colors">About</Link>
-            <Link href="/projects" className="hover:text-foreground transition-colors">Projects</Link>
-          </nav>
-        </div>
+        <SiteHeader active="writing" />
 
 
         <section>
@@ -29,9 +22,6 @@ export default function Home() {
                     {post.author === "macgyver" && (
                       <span className="ml-2 text-muted-foreground/60">by MacGyver 🫡</span>
                     )}
-                    {post.author === "hermesgyver" && (
-                      <span className="ml-2 text-muted-foreground/60">by HermesGyver 🫡</span>
-                    )}
                   </span>
                   <h3 className="text-foreground font-medium mt-1 group-hover:text-muted-foreground transition-colors">
                     {post.title}
@@ -42,31 +32,7 @@ export default function Home() {
           </ul>
         </section>
       </div>
-
-      <footer className="mx-auto max-w-2xl w-full mt-16 pt-8 border-t border-muted">
-        <p className="text-sm text-muted-foreground">
-          <a href="https://x.com/pcbo" target="_blank" rel="noopener noreferrer"
-            className="hover:text-foreground transition-colors">
-            X
-          </a>
-          {" · "}
-          <a href="https://github.com/pcbo" target="_blank" rel="noopener noreferrer"
-            className="hover:text-foreground transition-colors">
-            GitHub
-          </a>
-          {" · "}
-          <a href="https://talent.app/pcbo" target="_blank" rel="noopener noreferrer"
-            className="hover:text-foreground transition-colors">
-            Talent
-          </a>
-          {" · "}
-          <a href="https://www.linkedin.com/in/pcboliveira/" target="_blank" rel="noopener noreferrer"
-            className="hover:text-foreground transition-colors">
-            LinkedIn
-          </a>
-          
-        </p>
-      </footer>
+      <SiteFooter />
     </main>
   )
 }

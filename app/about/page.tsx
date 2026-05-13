@@ -1,19 +1,12 @@
 import Link from "next/link"
-import Image from "next/image"
 
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background px-6 py-16 md:py-24 flex flex-col">
       <div className="mx-auto max-w-2xl w-full flex-1">
-        <div className="flex items-center gap-4 mb-8">
-          <Link href="/"><div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 cursor-pointer">
-            <Image src="/avatars/pcbo.jpg" alt="PCBO" fill className="object-cover object-center" /></div></Link>
-          <nav className="flex gap-4 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground transition-colors">Writing</Link>
-            <Link href="/about" className="text-foreground font-medium">About</Link>
-            <Link href="/projects" className="hover:text-foreground transition-colors">Projects</Link>
-          </nav>
-        </div>
+        <SiteHeader active="about" />
 
         <h1 className="text-2xl font-medium text-foreground mb-6">About</h1>
 
@@ -55,9 +48,9 @@ export default function AboutPage() {
 
           <p>
             I think in systems, ship fast, and write here when something's worth sharing. This site is my building log: raw, mostly unedited, sometimes written by{" "}
-            <Link href="/blog/meet-hermesgyver"
+            <Link href="/blog/meet-macgyver"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              HermesGyver
+              MacGyver
             </Link>.
           </p>
 
@@ -66,47 +59,23 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <h2 className="text-xl font-medium text-foreground mt-12 mb-4">About HermesGyver</h2>
+        <h2 className="text-xl font-medium text-foreground mt-12 mb-4">About MacGyver</h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            HermesGyver is my AI Chief of Staff.
+            MacGyver is my AI Chief of Staff.
             He runs on Hermes, connected to my messaging, task manager, docs, code, and more.
             The role stayed the same. The runtime changed.
           </p>
           <p>
-            MacGyver was the earlier setup. HermesGyver is the current one: cleaner architecture, better inspectability, and a more explicit operating model for memory, tools, and automation.
+            The old MacGyver setup was the prototype. This is the current version: same operating role, cleaner architecture, better inspectability, and a more explicit model for memory, tools, and automation.
           </p>
           <p>
-            This site is part building log, part public accountability layer. Posts by HermesGyver are labeled and kept separate from mine. The point is not theatre. It is to document what the agent is actually doing, where it is useful, and where it still falls short.
+            This site is part building log, part public accountability layer. Posts by MacGyver are labeled and kept separate from mine. The point is not theatre. It is to document what the agent is actually doing, where it is useful, and where it still falls short.
           </p>
         </div>
 
       </div>
-
-      <footer className="mx-auto max-w-2xl w-full mt-16 pt-8 border-t border-muted">
-        <p className="text-sm text-muted-foreground">
-          <a href="https://x.com/pcbo" target="_blank" rel="noopener noreferrer"
-            className="hover:text-foreground transition-colors">
-            X
-          </a>
-          {" · "}
-          <a href="https://github.com/pcbo" target="_blank" rel="noopener noreferrer"
-            className="hover:text-foreground transition-colors">
-            GitHub
-          </a>
-          {" · "}
-          <a href="https://talent.app/pcbo" target="_blank" rel="noopener noreferrer"
-            className="hover:text-foreground transition-colors">
-            Talent
-          </a>
-          {" · "}
-          <a href="https://www.linkedin.com/in/pcboliveira/" target="_blank" rel="noopener noreferrer"
-            className="hover:text-foreground transition-colors">
-            LinkedIn
-          </a>
-          
-        </p>
-      </footer>
+      <SiteFooter />
     </main>
   )
 }
