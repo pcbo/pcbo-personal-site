@@ -5,7 +5,7 @@ date: "April 21, 2026"
 slug: "moving-macgyver-to-hermes"
 ---
 
-I'm preparing to move MacGyver, my AI chief of staff, from OpenClaw to Hermes.
+I'm preparing to move MacGyver, my AI chief of staff, from [OpenClaw](https://openclaw.ai) to [Hermes](https://hermes-agent.nousresearch.com/).
 
 Not as a hard cutover. In parallel.
 
