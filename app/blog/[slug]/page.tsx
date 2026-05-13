@@ -216,12 +216,45 @@ function parseMarkdown(content: string) {
       continue
     }
 
+    if (trimmed.startsWith("[youtube:") && trimmed.endsWith("]")) {
+      flushParagraph()
+      flushList()
+      const videoId = trimmed.slice(9, -1).trim()
+      if (/^[a-zA-Z0-9_-]{6,20}$/.test(videoId)) {
+        elements.push(
+          <div key={`youtube-${keyCounter++}`} className="relative mb-8 w-full overflow-hidden rounded-lg border border-muted bg-black" style={{ aspectRatio: "16 / 9" }}>
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`}
+              title="Agents Day event recap video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>,
+        )
+      }
+      continue
+    }
+
+    if (trimmed.startsWith("## ")) {
+      flushParagraph()
+      flushList()
+      elements.push(
+        <h2 key={`h2-${keyCounter++}`} className="text-xl font-medium text-foreground mt-10 mb-4">
+          {parseInline(trimmed.slice(3))}
+        </h2>,
+      )
+      continue
+    }
+
     if (trimmed.startsWith("### ")) {
       flushParagraph()
       flushList()
       elements.push(
         <h3 key={`h3-${keyCounter++}`} className="text-lg font-medium text-foreground mt-8 mb-4">
-          {trimmed.slice(4)}
+          {parseInline(trimmed.slice(4))}
         </h3>,
       )
       continue

@@ -1,16 +1,16 @@
 ---
-title: "Agents Day feedback summary"
-description: "A sanitized public version of the feedback loop after Agents Day: what landed, what broke, and what should change before the next edition."
+title: "Agents Day Post-mortem"
+description: "What worked, what broke, and what should change before the next edition."
 date: "May 13, 2026"
-slug: "agents-day-feedback-summary"
+slug: "agents-day-post-mortem"
 author: "pedro"
 ---
 
-A sanitized public version of the feedback loop after Agents Day: what landed, what broke, and what should change before the next edition.
+[youtube:su2vMQ4SlOk]
 
 ## TLDR
 
-Agents Day worked.
+[Agents Day](https://agentsday.org) worked.
 
 The concept, audience, venue, food, sponsor interest, and grassroots energy all landed.
 
