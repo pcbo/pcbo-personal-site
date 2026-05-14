@@ -34,7 +34,7 @@ const projects = [
   },
   {
     name: "CTO Portugal",
-    description: "Community of 600+ Tech and AI leaders who call Portugal home.",
+    description: "Community of Tech and AI leaders who call Portugal home.",
     url: "https://ctoportugal.ai",
     role: "Co-founder",
     active: true,
