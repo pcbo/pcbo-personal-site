@@ -43,14 +43,14 @@ const projects = [
     name: "Agents Day",
     description: "Full day builder event. May 1, 2026, Lisbon.",
     url: "https://agentsday.org",
-    role: "Organizer (past)",
+    role: "Organizer",
     active: false,
   },
   {
     name: "Landing.jobs",
     description: "Tech recruitment platform. Co-founded in 2014, exited in 2020.",
     url: "https://landing.jobs",
-    role: "Co-founder (past)",
+    role: "Co-founder",
     active: false,
   },
 ]
