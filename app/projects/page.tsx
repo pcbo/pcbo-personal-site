@@ -11,19 +11,19 @@ const projects = [
     active: true,
   },
   {
-    name: "Zeno Vision",
-    description: "AI studio building applied intelligence products.",
-    url: "https://zeno.vision",
-    role: "Co-pilot & minority owner",
-    active: true,
-  },
-  {
     name: "AntiFogo",
     description: "Wildfire intelligence layer for civil protection, fire brigades and sappers, and other forestry authorities.",
     url: "https://antifogo.pt",
     role: "Co-Founder",
     active: true,
     featured: true,
+  },
+  {
+    name: "Zeno Vision",
+    description: "AI studio building applied intelligence products.",
+    url: "https://zeno.vision",
+    role: "Co-pilot",
+    active: true,
   },
   {
     name: "noticed",
