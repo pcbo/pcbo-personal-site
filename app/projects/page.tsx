@@ -11,6 +11,28 @@ const projects = [
     active: true,
   },
   {
+    name: "Zeno Vision",
+    description: "AI studio building applied intelligence products. AntiFogo is the breakout project: a rural fire intelligence layer for Civil Protection, fire brigades, sappers, and forestry authorities.",
+    url: "https://zeno.vision",
+    role: "Co-pilot & minority owner",
+    active: true,
+  },
+  {
+    name: "AntiFogo",
+    description: "Rural fire intelligence for Portugal, built by Zeno Vision.",
+    url: "https://antifogo.pt",
+    role: "Breakout project from Zeno Vision",
+    active: true,
+    featured: true,
+  },
+  {
+    name: "noticed",
+    description: "Context and relationship intelligence for founders and operators.",
+    url: "https://noticed.so",
+    role: "Advisor",
+    active: true,
+  },
+  {
     name: "CTO Portugal",
     description: "Community of 600+ Tech and AI leaders who call Portugal home.",
     url: "https://ctoportugal.ai",
@@ -23,13 +45,6 @@ const projects = [
     url: "https://agentsday.org",
     role: "Organizer (past)",
     active: false,
-  },
-  {
-    name: "Zeno Vision",
-    description: "AI studio. Co-pilot and minority owner.",
-    url: "https://zeno.vision",
-    role: "Co-pilot",
-    active: true,
   },
   {
     name: "Landing.jobs",
