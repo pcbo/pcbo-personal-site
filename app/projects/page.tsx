@@ -7,7 +7,7 @@ const projects = [
     name: "Talent",
     description: "Making professional reputation data accessible. Builders build, get recognized, get paid.",
     url: "https://talent.app",
-    role: "CEO & Co-founder",
+    role: "Co-Founder & CEO",
     active: true,
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     name: "Zeno Vision",
     description: "AI studio building applied intelligence products.",
     url: "https://zeno.vision",
-    role: "Co-pilot",
+    role: "Co-Pilot",
     active: true,
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     name: "CTO Portugal",
     description: "Community of Tech and AI leaders who call Portugal home.",
     url: "https://ctoportugal.ai",
-    role: "Co-founder",
+    role: "Community Steward",
     active: true,
   },
   {
@@ -50,7 +50,7 @@ const projects = [
     name: "Landing.jobs",
     description: "Tech recruitment platform. Co-founded in 2014, exited in 2020.",
     url: "https://landing.jobs",
-    role: "Co-founder",
+    role: "Co-Founder",
     active: false,
   },
 ]
@@ -64,7 +64,7 @@ export default function ProjectsPage() {
       <div className="mx-auto max-w-2xl w-full flex-1">
         <SiteHeader active="projects" />
 
-        <h1 className="text-2xl font-medium text-foreground mb-8">Projects</h1>
+        <h1 className="text-2xl font-medium text-foreground mb-8">Work</h1>
 
         <section className="mb-12">
           <ul className="space-y-6">

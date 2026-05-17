@@ -19,7 +19,7 @@ export function SiteHeader({ active = null }: { active?: ActivePage }) {
       <nav className="flex gap-4 text-sm text-muted-foreground">
         <Link href="/" className={linkClass("writing")}>Writing</Link>
         <Link href="/about" className={linkClass("about")}>About</Link>
-        <Link href="/projects" className={linkClass("projects")}>Projects</Link>
+        <Link href="/projects" className={linkClass("projects")}>Work</Link>
       </nav>
     </div>
   )
