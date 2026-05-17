@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/site-footer"
 const projects = [
   {
     name: "Talent",
-    description: "Making professional reputation data accessible. Builders build, get recognized, get paid.",
+    description: "Making builder reputation data actionable.",
     url: "https://talent.app",
     role: "Co-Founder & CEO",
     active: true,
@@ -47,7 +47,7 @@ const projects = [
     active: false,
   },
   {
-    name: "Landing.jobs",
+    name: "Landing.Jobs",
     description: "Tech recruitment platform. Co-founded in 2014, exited in 2020.",
     url: "https://landing.jobs",
     role: "Co-Founder",
