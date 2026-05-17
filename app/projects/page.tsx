@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 const projects = [
   {
-    name: "Talent",
+    name: "Talent Protocol",
     description: "Making builder reputation data actionable.",
     url: "https://talent.app",
     role: "Co-Founder & CEO",
