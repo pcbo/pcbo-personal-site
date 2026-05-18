@@ -22,45 +22,29 @@ We could fix a lot of the operating problems. In fact, we already wrote the [Age
 
 Those things are fixable. But improving the ops is not the same as doubling the experience.
 
-To make another Lisbon edition clearly better than the first Lisbon one, my rough feeling is that we would need something like 100x the investment to create 2x the magic. That is not real math. It is grocery-shop math. But it captures the problem.
-
-The first one worked because it had aura. If the second one is just a more professional repeat, it might actually feel smaller.
+My rough feeling is that to make a second Lisbon edition meaningfully better, we would need a lot more investment for only a small improvement in the actual experience. Not because the first one was perfect. It wasn't. But because the thing that made it work was not just production value.
 
 ## What Public Good means here
 
-For Agents Day, becoming a Public Good does not mean decentralization theater.
-
-It means removing the practical gatekeeper.
-
-It means Agents Day should not be trapped inside one version, one team, or one city. Braga already had an Agents Day before Lisbon. That is part of the point: the format can travel, mutate, and belong to different local communities.
+For Agents Day, becoming a Public Good means removing the practical gatekeeper.
 
 If someone wants to host Agents Day in another city, adapt it for a smaller local community, or create a more technical version, a more product-focused version, a student version, a company-backed version, or a fully independent version, they should.
 
-Use the brand. Use the name. Use the idea. The [brand assets](https://courinha.github.io/agentsday/) are available too: logos, key visual, colors, typography, screen graphics, and background assets.
+Use the brand. Use the name. Use the idea. The [brand assets](https://courinha.github.io/agentsday/) are available too.
 
 Make it yours, as long as the spirit is there: a real day for people building with agents.
 
 ## What we are keeping
 
-This is not us walking away from Agents Day.
+This is not us walking away from Agents Day. We can still maintain the website, point people to useful assets, help amplify good editions, and have opinions about what makes an Agents Day feel real.
 
-It is more like refusing to trap it.
-
-We can still maintain the website, share what we learned, point people to useful assets, and help amplify good editions. We can still care about the quality bar. We can still have opinions about what makes an Agents Day feel real.
-
-But the brand should not depend on one team, one city, or one perfect sequel. The most honest way to protect the first Lisbon edition is not to force another one just because that is what events usually do. The most honest way is to let other people carry it forward.
+But the brand should not depend on one team or one perfect sequel. The better move is to let other people carry it forward.
 
 ## What happens next
 
-There may be another Agents Day in Lisbon someday.
+There may be another Agents Day in Lisbon someday. But there does not need to be one for Agents Day to continue.
 
-But there does not need to be one for Agents Day to continue.
-
-The next chapter might happen in another city, with another team, with a different shape. That is good.
-
-If you want to run one, do it. And if you want advice, context, intros, or a sanity check, reach out. I would rather help more people carry the spirit properly than keep the brand locked up.
-
-If Agents Day proved anything, it is that the agent builders community is already real. The brand should now belong to that energy, not just to us.
+If you want to run one, do it. And if you want advice, context, intros, or a sanity check, reach out.
 
 Agents Day is becoming a Public Good.
 
