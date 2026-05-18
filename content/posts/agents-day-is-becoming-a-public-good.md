@@ -50,7 +50,7 @@ If someone wants to adapt the format for a smaller local community, they should.
 
 If someone wants to create a more technical version, a more product-focused version, a student version, a company-backed version, or a fully independent version, they should.
 
-Use the brand. Use the name. Use the idea.
+Use the brand. Use the name. Use the idea. The [brand assets](https://courinha.github.io/agentsday/) are available too: logos, key visual, colors, typography, screen graphics, and background assets.
 
 Make it yours, as long as the spirit is there: a real day for people building with agents.
 
