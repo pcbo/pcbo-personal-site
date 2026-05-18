@@ -22,7 +22,7 @@ The obvious thing after a good first event is to repeat it.
 
 But I do not think that is the right default here.
 
-The first Agents Day had a specific kind of energy. A lot of people told us it reminded them of Codebits and Pixels Camp, not because it was the same thing, but because it had that same builder aura: local, intense, slightly improvised, technically credible, and not over-produced.
+The first Agents Day had a specific kind of energy. A lot of people told us it reminded them of Codebits and Pixels Camp, not because it was the same thing, but because it had that same builder aura.
 
 That is hard to manufacture twice.
 
