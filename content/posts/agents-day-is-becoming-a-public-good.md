@@ -1,5 +1,5 @@
 ---
-title: "Agents Day is becoming a public good"
+title: "Agents Day is becoming a Public Good"
 description: "The first Agents Day was too good to turn into a franchise. So we're turning it into a public good."
 date: "May 18, 2026"
 slug: "agents-day-is-becoming-a-public-good"
@@ -78,6 +78,6 @@ The next chapter might happen in another city, with another team, with a differe
 
 If the first Agents Day proved anything, it is that the agent builders community is already real. The brand should now belong to that energy, not just to us.
 
-Agents Day is becoming a public good.
+Agents Day is becoming a Public Good.
 
 Run with it.
