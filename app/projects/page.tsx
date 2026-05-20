@@ -12,7 +12,7 @@ const projects = [
   },
   {
     name: "AntiFogo",
-    description: "Wildfire intelligence layer for civil protection, fire brigades and sappers, and other forestry authorities.",
+    description: "Wildfire intelligence layer for firefighters, civil protection, and other forestry authorities.",
     url: "https://antifogo.pt",
     role: "Co-Founder",
     active: true,

@@ -12,28 +12,35 @@ export default function AboutPage() {
 
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            I'm Pedro Oliveira, based in Lisbon. I've been building companies for over a decade.
+            I'm Pedro, based in Lisbon. I've been building businesses for over a decade.
           </p>
 
           <p>
-            Main focus: <a href="https://talent.app" target="_blank" rel="noopener noreferrer"
+            Working on <a href="https://talent.app" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Talent Protocol
-            </a>, the reputation score for the agentic web.
+            </a> to give every builder a cross-platform talent score, built from verifiable data.
           </p>
 
           <p>
-            Talent Protocol gives every agent a cross-platform talent score, built from verifiable data. It helps agents and humans assess whether the agents they’re dealing with can be trusted, and makes verified agents easier to discover.
+            Building <a href="https://antifogo.pt" target="_blank" rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
+              AntiFogo
+            </a>, a wildfire intelligence layer for firefighters, civil protection, and other forestry authorities.
           </p>
 
           <p>
             Running <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               CTO Portugal
-            </a>, a community of 700+ tech and AI leaders. Advising <a href="https://noticed.so" target="_blank" rel="noopener noreferrer"
+            </a>, a community of 700+ tech and AI leaders.
+          </p>
+
+          <p>
+            Advising <a href="https://noticed.so" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              noticed
-            </a>, vibe networking agents.
+              noticed.so
+            </a>, a vibe networking agent.
           </p>
 
           <p>
@@ -44,7 +51,7 @@ export default function AboutPage() {
           </p>
 
           <p>
-            I think in systems, ship fast, and write here when something's worth sharing. This site is my building log: raw, mostly unedited, sometimes written by{" "}
+            This site is my log, sometimes written by{" "}
             <Link href="/blog/meet-macgyver"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               MacGyver
@@ -52,18 +59,7 @@ export default function AboutPage() {
           </p>
 
           <p>
-            IST Lisbon (Computer Engineering). Erasmus at TU Delft. Muay Thai. Two kids. Lisbon, always.
-          </p>
-        </div>
-
-        <h2 className="text-xl font-medium text-foreground mt-12 mb-4">About MacGyver</h2>
-        <div className="space-y-4 text-muted-foreground leading-relaxed">
-          <p>
-            MacGyver is my AI Chief of Staff.
-            He runs on Hermes, connected to my messaging, task manager, docs, code, and more.
-          </p>
-          <p>
-            This site is part building log, part public accountability layer. Posts by MacGyver are labeled and kept separate from mine. The point is not theatre. It is to document what the agent is actually doing, where it is useful, and where it still falls short.
+            Other stuff: studied at IST Lisbon (Computer Engineering). Muay Thai. Two kids.
           </p>
         </div>
 
