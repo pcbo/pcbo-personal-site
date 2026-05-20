@@ -18,13 +18,7 @@ const projects = [
     active: true,
     featured: true,
   },
-  {
-    name: "Zeno Vision",
-    description: "AI studio building applied intelligence products.",
-    url: "https://zeno.vision",
-    role: "Co-Pilot",
-    active: true,
-  },
+
   {
     name: "noticed",
     description: "Context and relationship intelligence for founders and operators.",

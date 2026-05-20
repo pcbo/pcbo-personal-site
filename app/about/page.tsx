@@ -30,10 +30,7 @@ export default function AboutPage() {
             Running <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               CTO Portugal
-            </a>, a community of 700+ tech and AI leaders. Co-piloting <a href="https://zeno.vision" target="_blank" rel="noopener noreferrer"
-              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              Zeno Vision
-            </a>, an AI-native app studio. Advising <a href="https://noticed.so" target="_blank" rel="noopener noreferrer"
+            </a>, a community of 700+ tech and AI leaders. Advising <a href="https://noticed.so" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               noticed
             </a>, vibe networking agents.
