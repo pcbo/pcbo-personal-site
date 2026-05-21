@@ -19,7 +19,7 @@ export default function AboutPage() {
             Working on <a href="https://talent.app" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Talent Protocol
-            </a> to give every builder a cross-platform talent score, built from verifiable data.
+            </a> to help builders turn their projects into reputation, rewards, and capital.
           </p>
 
           <p>
