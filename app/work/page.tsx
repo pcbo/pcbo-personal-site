@@ -50,7 +50,7 @@ export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-background px-6 py-16 md:py-24 flex flex-col">
       <div className="mx-auto max-w-2xl w-full flex-1">
-        <SiteHeader active="projects" />
+        <SiteHeader active="work" />
 
         <h1 className="text-2xl font-medium text-foreground mb-8">Work</h1>
 

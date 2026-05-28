@@ -36,12 +36,6 @@ export default function AboutPage() {
             </a>, a community of 700+ tech and AI leaders.
           </p>
 
-          <p>
-            Advising <a href="https://noticed.so" target="_blank" rel="noopener noreferrer"
-              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              noticed.so
-            </a>, a vibe networking agent.
-          </p>
 
           <p>
             Previously co-founded <a href="https://landing.jobs" target="_blank" rel="noopener noreferrer"

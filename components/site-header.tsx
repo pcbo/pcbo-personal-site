@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-type ActivePage = "writing" | "about" | "projects" | null
+type ActivePage = "writing" | "about" | "work" | null
 
 export function SiteHeader({ active = null }: { active?: ActivePage }) {
   const linkClass = (page: Exclude<ActivePage, null>) =>
@@ -19,7 +19,7 @@ export function SiteHeader({ active = null }: { active?: ActivePage }) {
       <nav className="flex gap-4 text-sm text-muted-foreground">
         <Link href="/" className={linkClass("writing")}>Writing</Link>
         <Link href="/about" className={linkClass("about")}>About</Link>
-        <Link href="/projects" className={linkClass("projects")}>Work</Link>
+        <Link href="/work" className={linkClass("work")}>Work</Link>
       </nav>
     </div>
   )
