@@ -5,14 +5,12 @@ import { SiteFooter } from "@/components/site-footer"
 const projects = [
   {
     name: "Talent Protocol",
-    description: "Making builder reputation data actionable.",
     url: "https://talent.app",
     role: "Co-Founder & CEO",
     active: true,
   },
   {
     name: "AntiFogo",
-    description: "Wildfire intelligence layer for firefighters, civil protection, and other forestry authorities.",
     url: "https://antifogo.pt",
     role: "Co-Founder",
     active: true,
@@ -21,28 +19,24 @@ const projects = [
 
   {
     name: "noticed",
-    description: "Context and relationship intelligence for founders and operators.",
     url: "https://noticed.so",
     role: "Advisor",
     active: true,
   },
   {
     name: "CTO Portugal",
-    description: "Community of Tech and AI leaders who call Portugal home.",
     url: "https://ctoportugal.ai",
     role: "Community Steward",
     active: true,
   },
   {
     name: "Agents Day",
-    description: "Full day builder event. May 1, 2026, Lisbon.",
     url: "https://agentsday.org",
     role: "Organizer",
     active: false,
   },
   {
     name: "Landing.Jobs",
-    description: "Tech recruitment platform. Co-founded in 2014, exited in 2020.",
     url: "https://landing.jobs",
     role: "Co-Founder",
     active: false,
@@ -75,7 +69,6 @@ export default function ProjectsPage() {
                     <h3 className="text-foreground font-medium">{project.name}</h3>
                   )}
                   <p className="text-sm text-muted-foreground mt-1">{project.role}</p>
-                  <p className="text-muted-foreground mt-1">{project.description}</p>
                 </div>
               </li>
             ))}
@@ -99,7 +92,6 @@ export default function ProjectsPage() {
                       <h3 className="text-foreground font-medium">{project.name}</h3>
                     )}
                     <p className="text-sm text-muted-foreground mt-1">{project.role}</p>
-                    <p className="text-muted-foreground mt-1">{project.description}</p>
                   </div>
                 </li>
               ))}
