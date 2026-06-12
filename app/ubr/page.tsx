@@ -45,7 +45,6 @@ const invite = [
   ["Have a field problem?", "Bring the messy operational reality. We will turn it into a prototype path."],
   ["Need robotics built?", "UBR can help explore, design, and test machines for emergency response and hard terrain."],
   ["Want to build?", "We want engineers and operators who care about machines that actually leave the lab."],
-  ["Want to back this?", "The studio model turns visible experiments into focused products when the signal is real."],
 ]
 
 export default function UBRPage() {
