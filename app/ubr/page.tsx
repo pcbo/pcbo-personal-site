@@ -12,14 +12,14 @@ export const metadata: Metadata = {
       "A Lisbon robotics studio building AI-powered machines for emergency response and hard real-world operations.",
     url: "https://pcbo.dev/ubr",
     siteName: "UBR",
-    images: ["/ubr/smoke-fire-detection-poster.jpg"],
+    images: ["/ubr/water-drop-drone-poster.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "UBR | Lisbon Robotics Studio",
     description:
       "A Lisbon robotics studio building AI-powered machines for emergency response and hard real-world operations.",
-    images: ["/ubr/smoke-fire-detection-poster.jpg"],
+    images: ["/ubr/water-drop-drone-poster.jpg"],
   },
 }
 
@@ -80,13 +80,17 @@ export default function UBRPage() {
             <div className="relative z-10">
               <div className="relative overflow-hidden rounded-[2.25rem] border border-orange-300/30 bg-[#0c0e10] shadow-2xl shadow-orange-950/30">
                 <div className="absolute left-5 top-5 z-20 rounded-full border border-orange-300/30 bg-black/50 px-3 py-1 text-xs uppercase tracking-[0.22em] text-orange-200 backdrop-blur">Hero asset</div>
-                <div className="relative aspect-[4/5] min-h-[540px] overflow-hidden bg-[radial-gradient(circle_at_50%_18%,rgba(255,142,55,0.30),transparent_22%),linear-gradient(180deg,#151719,#050607)]">
-                  <div className="absolute inset-x-10 top-20 h-28 rounded-full border border-white/15 bg-white/[0.03] blur-[1px]" />
-                  <div className="absolute left-1/2 top-24 h-2 w-72 -translate-x-1/2 rounded-full bg-stone-200/80 shadow-[0_0_70px_rgba(255,255,255,0.35)]" />
-                  <div className="absolute left-1/2 top-16 h-20 w-36 -translate-x-1/2 rounded-[2rem] border border-orange-200/40 bg-orange-400/15 shadow-[0_0_90px_rgba(255,120,40,0.35)]" />
-                  <div className="absolute left-1/2 top-36 h-56 w-px -translate-x-1/2 bg-gradient-to-b from-orange-200/80 to-transparent" />
-                  <div className="absolute bottom-24 left-1/2 h-56 w-40 -translate-x-1/2 rounded-b-[3rem] bg-gradient-to-b from-sky-200/85 via-sky-300/35 to-transparent blur-sm" />
-                  <div className="absolute bottom-16 left-1/2 h-24 w-72 -translate-x-1/2 rounded-[100%] bg-sky-200/20 blur-2xl" />
+                <div className="relative aspect-[4/5] min-h-[540px] overflow-hidden bg-stone-950">
+                  <video
+                    className="absolute inset-0 h-full w-full object-cover opacity-95"
+                    src="/ubr/water-drop-drone.mp4"
+                    poster="/ubr/water-drop-drone-poster.jpg"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/25" />
                   <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#050607] to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6 z-10">
                     <p className="mb-3 text-xs uppercase tracking-[0.28em] text-orange-300">Payload response</p>
@@ -119,8 +123,8 @@ export default function UBRPage() {
             <div className="relative aspect-video overflow-hidden bg-stone-950">
               <video
                 className="h-full w-full object-cover opacity-95"
-                src="/ubr/smoke-fire-detection.mp4"
-                poster="/ubr/smoke-fire-detection-poster.jpg"
+                src="/ubr/water-drop-drone.mp4"
+                poster="/ubr/water-drop-drone-poster.jpg"
                 autoPlay
                 muted
                 loop
@@ -129,7 +133,7 @@ export default function UBRPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="mb-2 text-xs uppercase tracking-[0.28em] text-orange-300">Live media available</p>
-                <h3 className="text-3xl font-semibold tracking-[-0.045em] md:text-5xl">Drone vision for smoke and fire.</h3>
+                <h3 className="text-3xl font-semibold tracking-[-0.045em] md:text-5xl">A heavy drone dropping water.</h3>
               </div>
             </div>
           </article>
