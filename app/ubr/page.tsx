@@ -40,6 +40,12 @@ const openQuestions = [
   "Fundraising approach for hardware, field testing, grants, partnerships, and non-dilutive capital",
 ]
 
+const prototypeSignals = [
+  "A large drone prototype capable of dropping 100L of water.",
+  "A tracked ground robot concept for operating in rough terrain and interacting with aerial systems.",
+  "Early robotics experiments across agriculture, emergency response, and field operations.",
+]
+
 export default function UBRPage() {
   return (
     <main className="min-h-screen bg-background px-6 py-16 md:py-24 flex flex-col">
@@ -127,6 +133,23 @@ export default function UBRPage() {
             <p className="text-foreground leading-relaxed">
               The useful question is not “which robot should we build?” It is “which emergency-response job can robotics do materially better than the current approach?”
             </p>
+          </div>
+        </section>
+
+        <section className="mb-14 border border-border rounded-3xl p-6 md:p-8 bg-card/20">
+          <p className="text-sm text-primary mb-3">Prototype signal</p>
+          <div className="grid md:grid-cols-[0.9fr_1.1fr] gap-8 items-start">
+            <div>
+              <h2 className="text-2xl font-medium text-foreground mb-4">This is already in the workshop.</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                UBR starts from working prototypes and visible experiments, not a slide-only thesis.
+              </p>
+            </div>
+            <ul className="space-y-4 text-muted-foreground leading-relaxed">
+              {prototypeSignals.map((item) => (
+                <li key={item} className="border-t border-border pt-4">{item}</li>
+              ))}
+            </ul>
           </div>
         </section>
 
