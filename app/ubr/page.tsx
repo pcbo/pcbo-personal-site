@@ -2,12 +2,12 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "UBR | Urban Beach Robotics",
+    absolute: "UBR | Lisbon Robotics Studio",
   },
   description:
     "A Lisbon robotics studio building AI-powered machines for emergency response and hard real-world operations.",
   openGraph: {
-    title: "UBR | Urban Beach Robotics",
+    title: "UBR | Lisbon Robotics Studio",
     description:
       "A Lisbon robotics studio building AI-powered machines for emergency response and hard real-world operations.",
     url: "https://pcbo.dev/ubr",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "UBR | Urban Beach Robotics",
+    title: "UBR | Lisbon Robotics Studio",
     description:
       "A Lisbon robotics studio building AI-powered machines for emergency response and hard real-world operations.",
     images: ["/ubr/smoke-fire-detection-poster.jpg"],
@@ -59,7 +59,7 @@ export default function UBRPage() {
         <div className="mx-auto flex min-h-[calc(100vh-48px)] max-w-7xl flex-col">
           <nav className="z-10 flex items-center justify-between text-xs uppercase tracking-[0.34em] text-stone-400">
             <span className="font-semibold text-stone-100">UBR</span>
-            <span>Urban Beach Robotics</span>
+            <span>UBRobotics</span>
           </nav>
 
           <div className="grid flex-1 items-center gap-12 py-16 lg:grid-cols-[0.95fr_1.05fr]">
