@@ -23,13 +23,6 @@ export default function AboutPage() {
           </p>
 
           <p>
-            Building <a href="https://antifogo.pt" target="_blank" rel="noopener noreferrer"
-              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              AntiFogo
-            </a>, a wildfire intelligence layer for firefighters, civil protection, and other forestry authorities.
-          </p>
-
-          <p>
             Running <a href="https://ctoportugal.ai" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               CTO Portugal

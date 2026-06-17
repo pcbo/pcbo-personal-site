@@ -10,14 +10,6 @@ const projects = [
     active: true,
   },
   {
-    name: "AntiFogo",
-    url: "https://antifogo.pt",
-    role: "Co-Founder",
-    active: true,
-    featured: true,
-  },
-
-  {
     name: "noticed",
     url: "https://noticed.so",
     role: "Advisor",
