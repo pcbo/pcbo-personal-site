@@ -10,6 +10,12 @@ const projects = [
     active: true,
   },
   {
+    name: "Polygraph",
+    url: "https://polygraph.so",
+    role: "Maintainer",
+    active: true,
+  },
+  {
     name: "noticed",
     url: "https://noticed.so",
     role: "Advisor",
