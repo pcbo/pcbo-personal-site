@@ -19,7 +19,7 @@ export default function AboutPage() {
             Building <a href="https://ubrobotics.ai" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               UB Robotics
-            </a>{" "}(UGV intelligence).
+            </a> (UGV intelligence).
           </p>
 
           <p>
