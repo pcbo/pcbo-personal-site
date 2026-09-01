@@ -1,7 +1,6 @@
 const links = [
   { label: "X", href: "https://x.com/pcbo" },
   { label: "GitHub", href: "https://github.com/pcbo" },
-  { label: "Talent Protocol", href: "https://talent.app/pcbo" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/pcboliveira" },
 ]
 
