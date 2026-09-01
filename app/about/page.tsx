@@ -26,7 +26,7 @@ export default function AboutPage() {
               Talent Protocol
             </a>. <a href="https://paragraph.com/@talent/talent-protocol-5-years-building-for-builders" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              Exited in 2026
+              Exited in 2026 to IPTS / Protocol Labs
             </a>.
           </p>
 
