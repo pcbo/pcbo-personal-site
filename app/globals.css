@@ -121,4 +121,10 @@
   body {
     @apply bg-background text-foreground;
   }
+  article ol li {
+    margin-bottom: 1rem;
+  }
+  article ol li:last-child {
+    margin-bottom: 0;
+  }
 }
