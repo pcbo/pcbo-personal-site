@@ -56,3 +56,24 @@ export function getPostBySlug(slug: string): Post | undefined {
   const posts = getAllPosts()
   return posts.find((post) => post.slug === slug)
 }
+
+function getYearFromDate(dateString: string): number {
+  const date = new Date(dateString)
+  return date.getFullYear()
+}
+
+export function getWritingPosts(): Post[] {
+  const posts = getAllPosts()
+  return posts.filter((post) => {
+    const year = getYearFromDate(post.date)
+    return year >= 2025
+  })
+}
+
+export function getArchivePosts(): Post[] {
+  const posts = getAllPosts()
+  return posts.filter((post) => {
+    const year = getYearFromDate(post.date)
+    return year === 2024
+  })
+}

@@ -1,16 +1,17 @@
 import Link from "next/link"
-import { getWritingPosts } from "@/lib/posts"
+import { getArchivePosts } from "@/lib/posts"
 
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-export default function Home() {
-  const posts = getWritingPosts()
+export default function Archive() {
+  const posts = getArchivePosts()
 
   return (
     <main className="min-h-screen bg-background px-6 py-16 md:py-24 flex flex-col">
       <div className="mx-auto max-w-2xl w-full flex-1">
-        <SiteHeader active="writing" />
+        <SiteHeader />
 
+        <h1 className="text-2xl font-medium mb-8">Archive</h1>
 
         <section>
           <ul className="space-y-6">
@@ -30,11 +31,6 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <div className="mt-6">
-            <Link href="/archive" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Archive
-            </Link>
-          </div>
         </section>
       </div>
       <SiteFooter />
