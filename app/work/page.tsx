@@ -6,7 +6,7 @@ const projects = [
   {
     name: "UB Robotics",
     url: "https://ubrobotics.ai",
-    role: "Founder / building UGV intelligence",
+    role: "Co-founder & CEO",
     active: true,
   },
   {
