@@ -30,14 +30,6 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <div className="mt-10 pt-6 border-t border-muted">
-            <Link
-              href="/archive"
-              className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Archive
-            </Link>
-          </div>
         </section>
       </div>
       <SiteFooter />

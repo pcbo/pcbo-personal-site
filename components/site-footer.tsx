@@ -1,7 +1,8 @@
 const links = [
-  { label: "X", href: "https://x.com/pcbo" },
-  { label: "GitHub", href: "https://github.com/pcbo" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/pcboliveira" },
+  { label: "Archive", href: "/archive", external: false },
+  { label: "X", href: "https://x.com/pcbo", external: true },
+  { label: "GitHub", href: "https://github.com/pcbo", external: true },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/pcboliveira", external: true },
 ]
 
 export function SiteFooter() {
@@ -11,7 +12,11 @@ export function SiteFooter() {
         {links.map((link, index) => (
           <span key={link.href}>
             {index > 0 && " · "}
-            <a href={link.href} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+            <a 
+              href={link.href} 
+              {...(link.external && { target: "_blank", rel: "noopener noreferrer" })} 
+              className="hover:text-foreground transition-colors"
+            >
               {link.label}
             </a>
           </span>
