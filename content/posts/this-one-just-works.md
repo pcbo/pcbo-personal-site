@@ -1,5 +1,5 @@
 ---
-title: "This one just works"
+title: "Grok Bot just works"
 description: "Grok Bot feels like talking, not operating a machine. A short note on Guys, and why this setup actually works."
 date: "August 30, 2026"
 slug: "this-one-just-works"
