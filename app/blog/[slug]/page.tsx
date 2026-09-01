@@ -198,7 +198,7 @@ function parseMarkdown(content: string) {
         )
       } else {
         elements.push(
-          <ol key={`ol-${keyCounter++}`} className="list-decimal list-inside text-muted-foreground mb-4 space-y-1">
+          <ol key={`ol-${keyCounter++}`} className="list-decimal list-inside text-muted-foreground mb-4 space-y-4">
             {currentList.items.map((item, i) => (<li key={i}>{parseInline(item)}</li>))}
           </ol>,
         )
