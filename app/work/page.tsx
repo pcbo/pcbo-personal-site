@@ -4,15 +4,9 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 const projects = [
   {
-    name: "Talent Protocol",
-    url: "https://talent.app",
-    role: "Co-Founder & CEO",
-    active: true,
-  },
-  {
-    name: "Polygraph",
-    url: "https://polygraph.so",
-    role: "Maintainer",
+    name: "UB Robotics",
+    url: "https://ubrobotics.ai",
+    role: "Founder / building UGV intelligence",
     active: true,
   },
   {
@@ -26,6 +20,12 @@ const projects = [
     url: "https://ctoportugal.ai",
     role: "Community Steward",
     active: true,
+  },
+  {
+    name: "Talent Protocol",
+    url: "https://talentprotocol.com",
+    role: "Co-Founder & CEO",
+    active: false,
   },
   {
     name: "Agents Day",
