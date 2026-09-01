@@ -19,14 +19,14 @@ export default function AboutPage() {
             Building <a href="https://ubrobotics.ai" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               UB Robotics
-            </a> (UGV intelligence).
+            </a>{" "}(UGV intelligence).
           </p>
 
           <p>
-            Previously co-founded Talent Protocol and exited in 2026 (IPTS acquired the builder record, with support from Protocol Labs). <a href="https://paragraph.com/@talent/talent-protocol-5-years-building-for-builders" target="_blank" rel="noopener noreferrer"
+            Previously co-founded Talent Protocol and <a href="https://paragraph.com/@talent/talent-protocol-5-years-building-for-builders" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              https://paragraph.com/@talent/talent-protocol-5-years-building-for-builders
-            </a>
+              exited in 2026
+            </a> (IPTS acquired the builder record, with support from Protocol Labs).
           </p>
 
           <p>
