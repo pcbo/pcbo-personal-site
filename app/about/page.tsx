@@ -12,28 +12,34 @@ export default function AboutPage() {
 
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            I'm Pedro, based in Lisbon. I've been building businesses for over a decade.
+            I'm Pedro, based in Lisbon.
           </p>
 
           <p>
-            Building <a href="https://ubrobotics.ai" target="_blank" rel="noopener noreferrer"
+            Building <a href="https://ubrobotics.ai/" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               UB Robotics
-            </a> (UGV intelligence).
+            </a> – UGV Intelligence.
           </p>
 
           <p>
-            Previously co-founded Talent Protocol and exited in 2026 (IPTS acquired the builder record, with support from Protocol Labs). <a href="https://paragraph.com/@talent/talent-protocol-5-years-building-for-builders" target="_blank" rel="noopener noreferrer"
+            Previously co-founded <a href="https://talentprotocol.com" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              https://paragraph.com/@talent/talent-protocol-5-years-building-for-builders
-            </a>
+              Talent Protocol
+            </a> and <a href="https://paragraph.com/@talent/talent-protocol-5-years-building-for-builders" target="_blank" rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
+              exited in 2026
+            </a>.
           </p>
 
           <p>
             Previously co-founded <a href="https://landing.jobs" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Landing.Jobs
-            </a> and scaled it into Portugal's biggest tech recruitment platform.
+            </a> and <a href="https://eco.sapo.pt/2025/04/02/e-um-exit-damia-group-compra-recrutadora-tech-landing-jobs/" target="_blank" rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
+              exited in 2025
+            </a>.
           </p>
 
           <p>
@@ -44,8 +50,7 @@ export default function AboutPage() {
           </p>
 
           <p>
-            This site is my log, sometimes written by{" "}
-            <Link href="/blog/meet-macgyver"
+            This site is my log, sometimes written by <Link href="/blog/meet-macgyver"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               MacGyver
             </Link>.
