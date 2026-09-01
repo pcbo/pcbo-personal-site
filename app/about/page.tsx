@@ -1,5 +1,3 @@
-import Link from "next/link"
-
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 export default function AboutPage() {
@@ -23,22 +21,22 @@ export default function AboutPage() {
           </p>
 
           <p>
-            Previously co-founded <a href="https://talentprotocol.com" target="_blank" rel="noopener noreferrer"
+            Co-founded <a href="https://talentprotocol.com" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Talent Protocol
-            </a> and <a href="https://paragraph.com/@talent/talent-protocol-5-years-building-for-builders" target="_blank" rel="noopener noreferrer"
+            </a>. <a href="https://paragraph.com/@talent/talent-protocol-5-years-building-for-builders" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              exited in 2026
+              Exited in 2026
             </a>.
           </p>
 
           <p>
-            Previously co-founded <a href="https://landing.jobs" target="_blank" rel="noopener noreferrer"
+            First exit was <a href="https://landing.jobs" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               Landing.Jobs
-            </a> and <a href="https://eco.sapo.pt/2025/04/02/e-um-exit-damia-group-compra-recrutadora-tech-landing-jobs/" target="_blank" rel="noopener noreferrer"
+            </a>, <a href="https://eco.sapo.pt/2025/04/02/e-um-exit-damia-group-compra-recrutadora-tech-landing-jobs/" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              exited in 2025
+              acquired by Damia Group in 2025
             </a>.
           </p>
 
@@ -50,7 +48,7 @@ export default function AboutPage() {
           </p>
 
           <p>
-            Other stuff: studied at IST Lisbon (Computer Engineering). Muay Thai. Two kids.
+            Other stuff: studied at Técnico Lisbon (Computer Engineering). Muay Thai. Two kids.
           </p>
         </div>
 
