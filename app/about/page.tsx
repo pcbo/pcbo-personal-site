@@ -50,13 +50,6 @@ export default function AboutPage() {
           </p>
 
           <p>
-            This site is my log, sometimes written by <Link href="/blog/meet-macgyver"
-              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              MacGyver
-            </Link>.
-          </p>
-
-          <p>
             Other stuff: studied at IST Lisbon (Computer Engineering). Muay Thai. Two kids.
           </p>
         </div>

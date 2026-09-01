@@ -6,7 +6,7 @@ import "./globals.css"
 
 const _inter = Inter({ subsets: ["latin"] })
 
-const siteDescription = "Pedro Oliveira. Building from Lisbon. Some posts written by MacGyver, his AI chief of staff in training."
+const siteDescription = "Pedro Oliveira. Building from Lisbon."
 
 export const metadata: Metadata = {
   title: {
