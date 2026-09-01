@@ -16,10 +16,24 @@ export default function AboutPage() {
           </p>
 
           <p>
-            Working on <a href="https://talent.app" target="_blank" rel="noopener noreferrer"
+            Building <a href="https://ubrobotics.ai" target="_blank" rel="noopener noreferrer"
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              Talent Protocol
-            </a> to help builders turn their projects into reputation, rewards, and capital.
+              UB Robotics
+            </a> (UGV intelligence).
+          </p>
+
+          <p>
+            Previously co-founded Talent Protocol and exited in 2026 (IPTS acquired the builder record, with support from Protocol Labs). <a href="https://paragraph.com/@talent/talent-protocol-5-years-building-for-builders" target="_blank" rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
+              https://paragraph.com/@talent/talent-protocol-5-years-building-for-builders
+            </a>
+          </p>
+
+          <p>
+            Previously co-founded <a href="https://landing.jobs" target="_blank" rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
+              Landing.Jobs
+            </a> and scaled it into Portugal's biggest tech recruitment platform.
           </p>
 
           <p>
@@ -27,14 +41,6 @@ export default function AboutPage() {
               className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
               CTO Portugal
             </a>, a community of 700+ tech and AI leaders.
-          </p>
-
-
-          <p>
-            Previously co-founded <a href="https://landing.jobs" target="_blank" rel="noopener noreferrer"
-              className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors">
-              Landing.Jobs
-            </a> and scaled it into Portugal’s biggest tech recruitment platform.
           </p>
 
           <p>
