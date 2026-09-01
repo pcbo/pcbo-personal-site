@@ -42,16 +42,6 @@ export default async function Image() {
         </div>
         <div
           style={{
-            fontSize: 28,
-            color: "#71717a",
-            marginTop: 16,
-            fontFamily: "system-ui, sans-serif",
-          }}
-        >
-          Some posts written by MacGyver, his AI chief of staff in training. 🫡
-        </div>
-        <div
-          style={{
             fontSize: 22,
             color: "#52525b",
             marginTop: 48,
