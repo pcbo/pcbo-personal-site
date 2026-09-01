@@ -10,7 +10,7 @@ export default function Archive() {
   return (
     <main className="min-h-screen bg-background px-6 py-16 md:py-24 flex flex-col">
       <div className="mx-auto max-w-2xl w-full flex-1">
-        <SiteHeader active="writing" />
+        <SiteHeader />
 
         <h1 className="text-2xl font-semibold mb-8">Archive</h1>
 
